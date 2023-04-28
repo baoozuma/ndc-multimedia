@@ -1,0 +1,227 @@
+.card {
+    grid-area: card;
+    background: transparent;
+    display: flex;
+    gap: 0.5vw;
+    padding: .4em;
+    width: 40vw;
+    height: 30vw;
+    right: 0;
+    margin-left: 6vw;
+    z-index: 1;
+    margin-top: 4vw;
+    transition: all .7s;
+    margin-right: 1vw;  
+  }
+
+.card a{
+
+    height: 25vw;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1vw;
+    transition: all .7s;
+    background: #212121;
+    border: 0.1vw solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* thêm thuộc tính position */
+    background-position: center center;
+    background-size: cover;
+    text-decoration: none;
+    font-family: "Comfortaa" !important;
+
+}
+.card a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.7s;
+    z-index: 1;
+  }
+  
+  .card :hover::before {
+    opacity: 0;
+  }
+.card a:hover {
+    flex: 3;
+    display: flex;  
+}
+
+.card .card1 {
+    background-image: url("./assets/Kim Junmyeon.jpg");
+}
+.card .card2 {
+    background-image: url("./assets/filming.jpg");
+}
+.card .card3 {
+    background-image: url("./assets/communication.jpg");
+}
+.card .card4 {
+    background-image: url("./assets/programming3.jpg");
+}
+.card .card5 {
+    background-image: url("./assets/cinematic.jpg");
+}
+.card a span {
+    display: flex;
+    flex-direction: column;
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.8vw;
+    letter-spacing: .1em;
+    text-decoration: none;
+
+}
+
+.card a:hover span {
+    transform: rotate(0);
+    margin-top: 5vw;
+
+}
+@media screen and (max-width:960px) {
+    .card {
+        justify-content: center !important;
+        margin: auto !important;
+        margin-top: 7vw !important;
+        width: 80vw;
+        height: 60vw;
+    }
+    .card a span {
+        font-size: 1.8vh;
+    }
+    .card a {
+      height: 40vw;
+    }
+}
+.about {
+  margin-top: 5vw;
+  gap: 2vw;
+  grid-area: slide;
+  display: flex;
+  justify-content: center;
+
+}
+.cardmain {
+    position: relative;
+    width: 250px;
+    height: 280px;
+    color: #2e2d31;
+    background-image: url("https://picsum.photos/400/400");
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .temporary_text {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 6px 12px;
+    color: #f8f8f8;
+  }
+  
+  .card_title {
+    color:white;
+    font-weight: bold;
+  }
+  
+  .card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+      /* edit the width to fit card */
+    width: 100%;
+    padding: 30px;
+    background: #000000;
+    border-top-left-radius: 20px;
+      /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+    color:white;
+  }
+  
+  .card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #000000;
+  }
+  
+  .card_title {
+    color:white;
+    line-height: 15px;
+  }
+  
+  .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  
+  .cardmain:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .cardmain:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .cardmain:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .cardmain:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

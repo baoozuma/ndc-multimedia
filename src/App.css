@@ -1,0 +1,444 @@
+/* This is a CSS code that defines the styling for a webpage. */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+*{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+body {
+
+    width: 100%;
+    height: 100% !important;
+    overflow-x: hidden;
+}
+.body {
+    overflow: visible;
+    background: linear-gradient(to top right, #1f2937, #211d1d);
+
+
+    display: grid;
+    width: 100% !important;
+    
+    grid-template-areas: 
+    "logo header"
+    "container card"
+    "container card"
+    "button input"
+    "des des"
+    "slide slide"
+    "footer footer";
+    grid-template-columns: 2fr 2fr;
+    max-width: 100vw;
+    
+    
+}
+.banner {
+   /* width: 10vw;
+    height: 10vw;
+    margin-top: -10vw;
+    float: right;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+
+
+}
+.banner img {
+    margin-top: 2vw;
+    width: 6.5vw;
+    height: 6.5vw;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+@media screen and (min-width: 960px){
+    
+
+    .camera {
+        top: 2vw;
+        
+        transform: rotate(-30deg);
+    }
+    .clapboard {
+        transform: rotate(30deg);
+        top: 2.5vw;
+        left: 7vw;
+    }
+    .smartphone {
+        transform: rotate(20deg);
+        top: 2vw;
+        left: 12vw;
+    }
+    .film-reel {
+
+        top: 12vw;
+        left: 4vw;
+    }
+    .video-camera {
+        top: 11vw;
+        left: -20vw;
+    }
+}
+.banner img:hover {
+    transform: scale(1.2);
+}
+
+
+header {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100%;
+    align-items: center;
+    grid-area: header;
+
+    
+}
+.navbar {
+    margin-right: 0vw;
+    height: 2vw;
+    float: right;
+    display: flex;
+    z-index: 100;
+}
+.logo {
+    z-index: 100;
+    filter: invert(100%);
+    margin: 2vw 0 0 4vw;
+    width: 7vw;
+    grid-area: logo;
+}
+.navbar button {
+    border: none;
+    color: white;
+    width: 12vw;
+    height: 4vw;
+    transition: all 0.3s;  
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.2vw;
+
+    vertical-align: flex-start;
+}
+.navbar button:hover {
+    color: rgba(163, 163, 163, 0.397);
+}
+  
+h2.title {
+    font-family: 'Mulish';
+    z-index: -1;
+    font-weight: 500;
+    width: 40vw;
+    color:rgb(255, 255, 255);
+
+    font-size: 2vw;
+    left: 0%;
+
+}
+@media screen and (max-width: 960px) {
+
+    
+}
+.container {
+    height: 30vw;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    grid-area: container;
+    margin-top: 3vw;
+
+}
+
+.icon {
+    grid-area: container;
+}
+.icon img {
+    width: 10%;
+    height: 10%;
+    margin: 30px;
+    position: relative;
+
+  }
+
+@keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
+.description {
+
+    padding: 5vw;
+    margin-top: 5vw;
+    background-color: transparent;
+    color: rgb(196, 186, 186);
+    grid-area: des;
+    display: grid;
+    gap: 0.5vw;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-areas: 
+    "who dont dont "
+    "contenter contenter contenter"
+    "img answerforwho answerforwho"
+    
+
+
+}
+
+.description h4 {
+    color: rgb(42, 114, 222);
+    border-top: 2px solid rgb(42, 114, 222);
+    font-weight: bolder;
+    font-size: 2vw;
+    width: 18vw;
+}
+.description .article {
+    font-size: 1.5vw;
+    grid-area: contenter;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s; 
+
+}
+.description span {
+    transition: all 0.3s; 
+    
+}
+.description span:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.description span {
+    margin: 2vw;
+}
+.description h3 {
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    font-size: 2vw;
+    
+          
+        
+}
+.description .ndc {
+    width: 100%;
+    padding: 1vw;
+}
+.who {
+    color: #ade8f4;
+    grid-area: who;
+    font-weight: bolder;
+    font-size: 4vw;
+    padding-right: 0vw;
+    width: 60%;
+}
+.answer {
+    grid-area: answerforwho;
+    padding: 2vw 2vw 0vw 2vw;
+    justify-content: center;
+    font-size: 1.5vw;
+    display: flex;
+    gap: 2vw;
+}
+.answer p {
+    height: 30vw;
+    width: 21vw;
+    background-color: rgb(0, 0, 0);
+    padding: 2vw;
+    border-radius: 2vw;
+    
+    transition: all 0.3s; 
+    
+}
+.bgp {
+    transition: all 0.3s; 
+    border-radius: 2vw;
+}
+.bgp:hover {
+    transform: scale(1.07);
+    color: white;
+    box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
+}
+.imgblock {
+    padding-top: 2vw;
+    width: auto;
+    gap: 2vw;
+    grid-area: img;
+    display: grid;
+    height: 30vw;
+    grid-template-areas: 
+    "img1 img2 img2"
+    "img3 img3 img4"
+}
+.description img {
+
+    object-fit: cover;
+    height: 14vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2vw;
+    transition: all 0.3s; 
+
+}
+.description img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
+}
+.description .img1 {
+    
+    grid-area: img1;
+    margin-right: 0vw;
+}
+.description .img2 {
+    grid-area: img2;
+}
+.description .img3 {
+
+    grid-area: img3;
+}
+.description .img4 {
+
+    grid-area: img4;
+}
+
+footer {
+    height: 2vw;
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+}
+@media screen and (max-width: 960px) {
+    .body {
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "logo logo logo logo" 
+        "header header header header"
+        "container container container container"
+        "card card card card"
+        "button button button button"
+        "input input input input"
+        "des des des des"
+        "slide slide slide slide"
+        "footer footer footer footer"
+    }
+    h2.title {
+        font-size: 4vw;
+        margin: 8vw 5vw 0 5vw;
+        width: auto;
+        align-items: center;
+    }
+    .navbar button {
+        font-size: 3vw;
+        width: 25vw;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center !important;
+    }
+    .logo {
+        width: 10vw;
+        margin-right: 80vw;
+    }
+    .banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    .banner img { 
+        margin: 5vw 4vw 2vw 4vw;
+        position: relative;
+        scale: 1.6;
+    }
+    .camera {
+        transform: rotate(-30deg);
+    }
+    .clapboard {
+        transform: rotate(20deg);
+        
+    }
+    .smartphone {
+        transform: rotate(20deg);
+        
+    }
+    
+    .table-item {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .navbar {
+        margin-top: 3vw;
+    }
+    .table {
+        margin: 2vw;
+    }
+    .description {
+        height: 100%;
+        padding: 2vw;
+        margin-top: 5vw;
+
+        color: white;
+        grid-area: des;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 4vw
+    }
+    .description img {
+        height: 31vw;
+    }
+    .imgblock {
+        height: 100%;
+        margin: 0 auto;
+    }
+    .answer {
+        display: block;
+        flex-direction: column;
+        font-size: 3vw;
+        margin: 0 auto;
+        ;   
+    }
+    .answer p {
+        margin-top: 3vw;
+        padding: 3vw;
+        width: 80vw;
+        height: 50vw;
+    }
+    .description .article {
+        flex-direction: column;
+        position: relative;
+        margin-top: 2vw;
+        gap: 6vw;
+    }
+    .description h4 {
+        font-size: 4vw;
+        width: 40vw;
+    }
+    .description p {
+        font-size: 4vw;
+    }
+    .who {
+        margin-top: 2vw;
+        font-size: 8vw;
+    }
+}
