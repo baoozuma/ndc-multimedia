@@ -163,19 +163,23 @@ class Hero extends React.Component {
         <h1 className='who'data-aos="fade-right" data-aos-duration="700">ABOUT US</h1>
         <div className="article" data-aos="fade-right" data-aos-duration="700">
           <span>
-            <h4>Connecting people</h4> 
+            <img src={images['connecting.jpg']} />
+            <h4>CONNECTING US</h4> 
             <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere..</p>
           </span>
           <span>
-            <h4>Be responsible</h4> 
+            <img src={images['responsible.jpg']} />
+            <h4>BE RESPONSIBLE</h4> 
             <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
           </span>
           <span>
-            <h4>UI/UX Designer</h4>
+            <img src={images['uiux.jpg']} />
+            <h4>UI/UX DESIGNER</h4>
             <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
           </span>
           <span>
-            <h4>Front-end Dev</h4>
+            <img src={images['frontend.jpg']} />
+            <h4>FRONT-END DEV</h4>
             <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
           </span>
         </div>
@@ -184,10 +188,10 @@ class Hero extends React.Component {
           <div className='bgp'><p data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
         </section>
         <div className='imgblock' data-aos="fade-right" data-aos-duration="700">
-          <img className='img1' src={images['bg1.jpg']}></img>
-          <img className='img2' src={images['bg2.jpg']}></img>
-          <img className='img3' src={images['bg3.jpg']}></img>
-          <img className='img4' src={images['bg4.jpg']}></img>
+          <img className='img img1' src={images['bg1.jpg']}></img>
+          <img className='img img2' src={images['bg2.jpg']}></img>
+          <img className='img img3' src={images['bg3.jpg']}></img>
+          <img className='img img4' src={images['bg4.jpg']}></img>
         </div>
     </div>
   )
@@ -215,62 +219,125 @@ class Hero extends React.Component {
 class About extends React.Component {
 
   about = (
-    
-    <div className="about">
-      <article className="cardmain">
-        <div className="temporary_text"></div>
-        <div className="card_content">
-          <span className="card_title">Nguyễn Lý Tính</span>
-          <span className="card_subtitle">
-            Thsi is a subtitle of this page. Let us see how it looks on the Web.
-          </span>
-          <p className="card_description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, turpis in volutpat bibendum, dui justo facilisis tortor, id lobortis ex nisl vel justo.          </p>
+    <>
+    <h1 className="memberintro" data-aos="fade-right" data-aos-duration="700">OUR LEADERS</h1>
+    <div className="about" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Tinh.jpg']} className="card-avatar" />
+          <div className="card-title">Nguyễn Lý Tính</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
         </div>
-      </article>
-      <article className="cardmain">
-        <div className="temporary_text"></div>
-        <div className="card_content">
-          <span className="card_title">Trần Ngô Thành Bình</span>
-          <span className="card_subtitle">
-            Thsi is a subtitle of this page. Let us see how it looks on the Web.
-          </span>
-          <p className="card_description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, turpis in volutpat bibendum, dui justo facilisis tortor, id lobortis ex nisl vel justo.
-          </p>
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Bao.jpg']} className="card-avatar" />
+          <div className="card-title">Phạm Ngọc Gia Bảo</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
         </div>
-      </article>
-      <article className="cardmain">
-        <div className="temporary_text"></div>
-        <div className="card_content">
-          <span className="card_title">Phạm Ngọc Gia Bảo</span>
-          <span className="card_subtitle">
-            Thsi is a subtitle of this page. Let us see how it looks on the Web.
-          </span>
-          <p className="card_description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, turpis in volutpat bibendum, dui justo facilisis tortor, id lobortis ex nisl vel justo.
-          </p>
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Tinh.jpg']} className="card-avatar" />
+          <div className="card-title">Nguyễn Lý Tính</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
         </div>
-      </article>
-      <article className="cardmain">
-        <div className="temporary_text"></div>
-        <div className="card_content">
-          <span className="card_title">Lê Trường Khải</span>
-          <span className="card_subtitle">
-            Thsi is a subtitle of this page. Let us see how it looks on the Web.
-          </span>
-          <p className="card_description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, turpis in volutpat bibendum, dui justo facilisis tortor, id lobortis ex nisl vel justo.
-          </p>
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Tinh.jpg']} className="card-avatar" />
+          <div className="card-title">Nguyễn Lý Tính</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
         </div>
-      </article>
-     
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Tinh.jpg']} className="card-avatar" />
+          <div className="card-title">Nguyễn Lý Tính</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+        </div>
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+      <div className="cardmain">
+        <div className="card-info">
+          <img src={images['Tinh.jpg']} className="card-avatar" />
+          <div className="card-title">Nguyễn Lý Tính</div>
+          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+        </div>
+        <ul className="card-social">
+          <li className="card-social__item">
+          <img className='icon' src={images['facebook.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['youtube.png']} ></img>
+          </li>
+          <li className="card-social__item">
+          <img className='icon' src={images['twitter.png']} ></img>
+          </li>
+        </ul>
+      </div>
+
     </div>
+    </>
   );
   render() {
     return (
       <>
-        {/* {this.about} */}
+        {this.about} 
         {this.description}
       </>
     );
@@ -282,6 +349,7 @@ const App = () => {
     <body className='body bg-gradient-to-bl from-gray-800 via-gray-900 to-black'>
       <div></div>
       <Hero />
+      <About />
     </body>
     
   );
