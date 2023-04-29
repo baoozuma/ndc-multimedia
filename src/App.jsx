@@ -209,7 +209,7 @@ class Hero extends React.Component {
         {this.search}
         {this.description}
         {/* {this.bg} */}
-        {this.footer}
+        {this.footer} 
         {/* {this.line} */}
 
       </>
@@ -226,7 +226,11 @@ class About extends React.Component {
         <div className="card-info">
           <img src={images['Tinh.jpg']} className="card-avatar" />
           <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <div className="card-subtitle">
+            10TH - Nguyen Dinh Chieu<br></br>
+            CEO &amp; Co-Founder
+            
+            </div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">
@@ -244,7 +248,7 @@ class About extends React.Component {
         <div className="card-info">
           <img src={images['Bao.jpg']} className="card-avatar" />
           <div className="card-title">Phạm Ngọc Gia Bảo</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <div className="card-subtitle">10T - Nguyen Dinh Chieu<br></br>Frontend Developer</div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">
@@ -260,9 +264,9 @@ class About extends React.Component {
       </div>
       <div className="cardmain">
         <div className="card-info">
-          <img src={images['Tinh.jpg']} className="card-avatar" />
-          <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <img src={images['khai.jpg']} className="card-avatar" />
+          <div className="card-title">Lê Trường Khải</div>
+          <div className="card-subtitle">10T - Nguyen Dinh Chieu <br></br>Data Analyst &amp; Scientist</div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">
@@ -278,9 +282,9 @@ class About extends React.Component {
       </div>
       <div className="cardmain">
         <div className="card-info">
-          <img src={images['Tinh.jpg']} className="card-avatar" />
-          <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <img src={images['nguyen.jpg']} className="card-avatar" />
+          <div className="card-title">Phan Thành Nguyên</div>
+          <div className="card-subtitle">10L - Nguyen Dinh Chieu<br></br>Backend Developer</div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">
@@ -296,9 +300,9 @@ class About extends React.Component {
       </div>
       <div className="cardmain">
         <div className="card-info">
-          <img src={images['Tinh.jpg']} className="card-avatar" />
-          <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <img src={images['tuyen.jpg']} className="card-avatar" />
+          <div className="card-title">Cao Bích Tuyền</div>
+          <div className="card-subtitle">10T - Nguyen Dinh Chieu <br></br>Actor &amp; Artist</div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">
@@ -314,9 +318,9 @@ class About extends React.Component {
       </div>
       <div className="cardmain">
         <div className="card-info">
-          <img src={images['Tinh.jpg']} className="card-avatar" />
-          <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">CEO &amp; Co-Founder</div>
+          <img src={images['tvu.jpg']} className="card-avatar" />
+          <div className="card-title">Huỳnh Tuấn Vũ</div>
+          <div className="card-subtitle">10L - Nguyen Dinh Chieu <br></br>UI/UX Designer</div>
         </div>
         <ul className="card-social">
           <li className="card-social__item">

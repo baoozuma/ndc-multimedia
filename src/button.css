@@ -75,7 +75,7 @@
   .input {
     height: 4vw;
     width: 30vw;
-    padding: 0 1rem;
+    padding: 0 2vw;
     color: #fff;
     font-size: 1.5vw;
     border: 1px solid #5e4dcd;
@@ -86,7 +86,7 @@
   
   .button--submit {
     height: 4vw;
-    padding: .5em 1em;
+    padding: 1vw 2vw;
     border: none;
     border-radius: 0 1vw 1vw 0;
     background-color: #5e4dcd;
@@ -125,7 +125,7 @@
     .input-group {
 
       scale: 2;
-      width: 60vw;
+      width: 65vw;
       justify-content: center;
     }
 }
