@@ -225,7 +225,7 @@ const settings = {
   speed: 1000,
   slidesToShow: 5,
   slidesToScroll: 1,
-
+  swipeToScroll: true,
   initialSlide: 0,
   responsive: [
     {
@@ -233,7 +233,6 @@ const settings = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
         dots: true
       }
     },  
