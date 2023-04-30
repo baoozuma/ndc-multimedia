@@ -108,33 +108,26 @@
     }
 }
 .about {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
-    gap: 0.5vw;
-    grid-area: slide;
-    display: flex;
 
-    padding: 4vw;
-    padding-top: 2vw;
+   width: 97%;
+   gap: 1vw;
+   grid-area: slide;   
+   margin: 0vw auto;  
+
 
 
 }
-.about::-webkit-scrollbar {
+/* .about {
+   overflow-x: scroll;
+   overflow-y: hidden;
+   width: 100vw;
+   padding: 10vw 0vw;
 
-    height: 7px;
-}
 
-.about::-webkit-scrollbar-thumb {
-    background: #ffffff00;
-    width: 3vw;
-    border-radius: 10px;
-    border: 2vw solid white;
+} */
+.slick-slide > div {
+   margin: 0 0.2vw
 }
-.about::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
 .cardmain {
     flex-shrink: 0;
     border: 0.1vw solid rgb(255, 255, 255);
@@ -145,6 +138,7 @@
     padding: 2rem 1.5rem;
     transition: all 0.3s;
     box-shadow: -1rem 0 3rem #000;
+    margin: 0vw 3vw;
  }
  
  .card-info {
@@ -209,8 +203,8 @@
  .cardmain:hover {
     box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
     border: 0.2vw solid rgb(249, 202, 115); 
-    transform: scale(1.1);
-    margin: 0vw 2vw 0vw 2vw;
+    position: relative;
+    z-index: 10;
  }
 
  .cardmain:hover .card-info {
@@ -241,22 +235,11 @@
         justify-content: center;
         margin: 5vw auto;
     }
-    .about {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        width: 100vw;
-        padding: 10vw 0vw;
-    
-    
-    }
-    .about::-webkit-scrollbar-thumb {
-        background: #ffffff00;
-        width: 3vw;
-        border-radius: 10px;
-    }
+   
     .cardmain {
         width: 48vw;
-        height: 60vw;
+        height: 55vw;
+        padding: 5vw 2vw;
 
      }
      
@@ -284,23 +267,18 @@
      /*Text*/
      .card-title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         font-weight: 600;
         line-height: 8vw;
      }
      
      .card-subtitle {
         color: #7f7d7d;
-        font-size: 2.5vw;
+        font-size: 2.2vw;
      }
      
      /*Hover*/
-     .cardmain:hover {
-        box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
-        border: 0.2vw solid rgb(249, 202, 115); 
-        transform: scale(1.2);
-        margin: 0vw 4.8vw 0vw 4.8vw;
-     }
+
     
      .cardmain:hover .card-info {
         transform: translateY(-5%);

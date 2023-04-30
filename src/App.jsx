@@ -4,18 +4,20 @@ typing effect and animated icons, and an about section with information about th
 activities. The code also imports images and uses Framer Motion and React Tooltip libraries for
 animation and tooltips. */
 import './App.css';
-import React from 'react';
+import React, { Component } from "react";
+import Slider from "react-slick";
 import { useEffect } from "react";
 import './button.css';
 import './card.css';
 import images from './components/importImages';
 import {motion} from "framer-motion";
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-class Hero extends React.Component {
+class Hero extends Component {
    head = (
 
     <head>
@@ -216,12 +218,34 @@ class Hero extends React.Component {
     );
   }
 }
-class About extends React.Component {
+const settings = {
+  className: "about",
+  dots: true,
+  infinite: false,
+  speed: 1000,
+  slidesToShow: 5,
+  slidesToScroll: 1,
 
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },  
+  ]
+};
+class About extends Component {
+  
   about = (
     <>
     <h1 className="memberintro" data-aos="fade-right" data-aos-duration="700">OUR LEADERS</h1>
-    <div className="about" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
+    <div className="about " data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
+    <Slider {...settings}>
       <div className="cardmain">
         <div className="card-info">
           <img src={images['Tinh.jpg']} className="card-avatar" />
@@ -334,11 +358,12 @@ class About extends React.Component {
           </li>
         </ul>
       </div>
-
+    </Slider>
     </div>
     </>
   );
   render() {
+
     return (
       <>
         {this.about} 
@@ -349,6 +374,7 @@ class About extends React.Component {
 }
 const App = () => {
   AOS.init();
+
   return (
     <body className='body bg-gradient-to-bl from-gray-800 via-gray-900 to-black'>
       <div></div>
