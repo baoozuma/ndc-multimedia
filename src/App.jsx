@@ -163,11 +163,12 @@ class Hero extends Component {
           <div><img className='boy' src={stories[1].image} ></img></div>
         </section>
         <section className='big'>
+        <div><img className='stand' src={stories[2].image} ></img></div>
           <blockquote>
             <h3>{stories[2].title}</h3>
             <p>{stories[2].description}</p>
           </blockquote>
-          <img className='stand' src={stories[2].image} ></img>
+          
           
         </section>
         </div>

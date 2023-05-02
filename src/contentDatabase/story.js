@@ -18,7 +18,7 @@ export const stories = [
         id: "tell",
         title: "WE TELL OUR STORIES",
         image: images["standing.jpg"],
-        description: "Vestibulum orci sapien, dignissim vitae felis quis, bibendum venenatis ante.",
+        description: "Vestibulum orci sapien, dignissim vitae felis quis, bibendum venenatis ante. Suspendisse accumsan pulvinar laoreet. Nam cursus, diam ac consequat commodo, augue nisl condimentum ante, ac fringilla tellus nisl id velit. In in lacinia massa. ",
 
     },
 ]

@@ -48,7 +48,6 @@
     );
   }
 .story img {
-
     height: 25vw;
     width: 25vw;
     box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
@@ -62,12 +61,10 @@
     border-radius: 50%;
 }
 .story .stand {
-    margin: 0 auto;
-    width: 64vw;
-    height: 36vw;
+    border : 0.7vw solid black;
 }
 .story blockquote {
-    
+    justify-content: center;
     margin-top: 1vw;
     padding: 2vw;
     display: flex;
@@ -83,18 +80,4 @@
     margin: 0 auto;
     font-size: 2vw;
     line-height: 3vw;
-}
-.big p {
-    width: 64vw;
-    text-align: center;
-}
-.big {
-    
-    gap: 1vw !important;
-    margin: 0;
-    line-height: 4vw;
-    display: flex;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
 }
