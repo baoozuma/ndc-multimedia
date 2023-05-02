@@ -230,9 +230,11 @@
         justify-content: center;
         margin: 5vw auto;
     }
-   
+    .about {
+      gap: 0.4vw;
+    }
     .cardmain {
-        width: 30vw;
+        width: 31vw;
         height: 55vw;
         padding: 5vw 2vw;
 
