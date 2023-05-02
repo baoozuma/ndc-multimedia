@@ -121,10 +121,10 @@
 .cardmain {
     border: 0.15vw solid rgb(171, 165, 165);
     font-family: 'Mulish';
-    width: 18vw;
+    width: 16vw;
     height: 26vw;
     background: #17141d;
-    padding: 3vw 3vw;
+    padding: 3vw 2vw;
     transition: all 0.3s;
     line-height: 4vw;
     

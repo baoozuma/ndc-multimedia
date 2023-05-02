@@ -1,4 +1,4 @@
-import images from './components/importImages';
+import images from '../components/importImages';
 const exampleDB = [
     {
         id: 1,

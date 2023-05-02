@@ -1,0 +1,100 @@
+:root {
+    --border: 3px;
+    --color1: #6be89b;
+    --color2: #0076a5;
+    --from: 30deg;
+    --distance: 46%;
+  }
+.story {
+    grid-area: story;
+    margin: 2vw;
+}
+.story section {
+    margin: 3vw 0;
+    display: flex;
+    width: 100% !important;
+    gap: 4vw;
+    justify-content: center;
+
+}
+.border {
+    position: relative;
+    padding: 30px;
+  }
+.border::after {
+    content: '';
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) var(--distance),
+      transparent var(--distance)
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+  }
+.story img {
+
+    height: 25vw;
+    width: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
+}
+.story .girl {
+    border-radius: 999px;
+    display: block;
+
+  }
+.story .boy {
+    border-radius: 50%;
+}
+.story .stand {
+    margin: 0 auto;
+    width: 64vw;
+    height: 36vw;
+}
+.story blockquote {
+    
+    margin-top: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.story blockquote h3 {
+    
+    font-size: 3vw;
+    margin: 0 auto;
+
+}
+.story blockquote p {
+    margin: 0 auto;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+.big p {
+    width: 64vw;
+    text-align: center;
+}
+.big {
+    
+    gap: 1vw !important;
+    margin: 0;
+    line-height: 4vw;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+}

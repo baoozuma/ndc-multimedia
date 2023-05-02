@@ -1,15 +1,17 @@
-
 import './App.css';
 import React, { Component } from "react";
 import './button.css';
 import './card.css';
+import'./story.css';
 import images from './components/importImages';
 import {motion} from "framer-motion";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { memberDB } from './member';
+import { memberDB } from './contentDatabase/member';
+import { aboutDB } from './contentDatabase/about4parts';
+import { stories } from './contentDatabase/story';
 class Hero extends Component {
    head = (
 
@@ -141,31 +143,44 @@ class Hero extends Component {
       <div className="bg bg3"></div>
     </>
   )
-    
+  
   description = (
     <div className='description' >
         <h1 className='who'>ABOUT US</h1>
+        <div className="story">
+        <section>
+          <div className="border"><img className='girl' src={stories[0].image} ></img></div>
+          <blockquote>
+            <h3>{stories[0].title}</h3>
+            <p>{stories[0].description}</p>
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>
+            <h3>{stories[1].title}</h3>
+            <p>{stories[1].description}</p>
+          </blockquote>
+          <div><img className='boy' src={stories[1].image} ></img></div>
+        </section>
+        <section className='big'>
+          <blockquote>
+            <h3>{stories[2].title}</h3>
+            <p>{stories[2].description}</p>
+          </blockquote>
+          <img className='stand' src={stories[2].image} ></img>
+          
+        </section>
+        </div>
+        <h1 className='res'>OUR TARGET</h1>
         <div className="article" >
-          <span>
-            <img src={images['connecting.jpg']} />
-            <h4>CONNECTING US</h4> 
-            <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere..</p>
-          </span>
-          <span>
-            <img src={images['responsible.jpg']} />
-            <h4>BE RESPONSIBLE</h4> 
-            <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
-          </span>
-          <span>
-            <img src={images['uiux.jpg']} />
-            <h4>UI/UX DESIGNER</h4>
-            <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
-          </span>
-          <span>
-            <img src={images['frontend.jpg']} />
-            <h4>FRONT-END DEV</h4>
-            <p>Praesent tincidunt enim eu mollis fermentum. Vestibulum molestie purus quis urna eleifend posuere.</p>
-          </span>
+          
+          {aboutDB.map((item) => (
+            <span>
+              <img src={item.image} />
+              <h4>{item.title}</h4> 
+              <p>{item.description}</p>
+            </span>
+          ))}
         </div>
         <section className='answer'>
           <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
