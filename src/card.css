@@ -1,22 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .card {
     grid-area: card;
     background: transparent;
     display: flex;
     gap: 0.5vw;
     padding: .4em;
-    width: 40vw;
+    width: 45vw;
     height: 30vw;
     right: 0;
-    margin-left: 6vw;
     z-index: 1;
-    margin-top: 4vw;
+    margin: auto;
     transition: all .7s;
-    margin-right: 1vw;  
+ 
   }
 
 .card a{
 
-    height: 25vw;
+    height: 30vw;
     flex: 1;
     overflow: hidden;
     cursor: pointer;
@@ -31,7 +31,7 @@
     background-position: center center;
     background-size: cover;
     text-decoration: none;
-    font-family: "Comfortaa" !important;
+
 
 }
 .card a::before {
@@ -101,44 +101,30 @@
         height: 60vw;
     }
     .card a span {
-        font-size: 1.8vh;
+        font-size: 3vw;
     }
     .card a {
       height: 40vw;
     }
 }
 .about {
-
-   width: 97%;
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
    gap: 1vw;
    grid-area: slide;   
-   margin: 0vw auto;  
-
-
-
+   padding: 0;
 }
-/* .about {
-   overflow-x: scroll;
-   overflow-y: hidden;
-   width: 100vw;
-   padding: 10vw 0vw;
 
-
-} */
-.slick-slide > div {
-   margin: 0 0.2vw
-}
 .cardmain {
-    flex-shrink: 0;
-    border: 0.1vw solid rgb(255, 255, 255);
+    border: 0.15vw solid rgb(171, 165, 165);
     font-family: 'Mulish';
-    width: 18vw;
-    height: 24vw;
+    width: 21vw;
+    height: 28vw;
     background: #17141d;
-    padding: 2rem 1.5rem;
+    padding: 3vw 3vw;
     transition: all 0.3s;
-    box-shadow: -1rem 0 3rem #000;
-    margin: 0vw 3vw;
+    line-height: 4vw;
  }
  
  .card-info {
@@ -156,6 +142,7 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    border: 0.15vw solid rgb(171, 165, 165); 
     transition: all 0.3s;
     margin-bottom: 1rem;
  }
@@ -188,23 +175,25 @@
  /*Text*/
  .card-title {
     color: #ffffff;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     font-weight: 600;
     line-height: 4vw;
  }
  
  .card-subtitle {
     text-align: center;
-    color: #7f7d7d;
-    font-size: 1vw;
+    color: #9f9c9c;
+    font-size: 0.9vw;
+    line-height: 1.7rem;
  }
 
  /*Hover*/
  .cardmain:hover {
     box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
-    border: 0.2vw solid rgb(249, 202, 115); 
+    border: 0.15vw solid rgb(249, 202, 115); 
     position: relative;
     z-index: 10;
+    transform: scale(1.02);
  }
 
  .cardmain:hover .card-info {
@@ -218,14 +207,15 @@
  }
  
  .card-social__item img:hover {
+   
     fill: #232323;
     transform: scale(1.2);
  }
  
- .card-avatar:hover {
-    transform: scale(1.1);
+ .cardmain:hover .card-avatar {
+   border: 0.15vw solid rgb(249, 202, 115); 
+   transform: scale(1.1);
  }
-  
 
 @media screen and (max-width: 960px) {
     .memberintro {
@@ -237,7 +227,7 @@
     }
    
     .cardmain {
-        width: 48vw;
+        width: 40vw;
         height: 55vw;
         padding: 5vw 2vw;
 

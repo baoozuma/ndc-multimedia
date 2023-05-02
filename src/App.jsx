@@ -1,12 +1,6 @@
-/* The above code is a React application that creates a website for a multimedia club. It includes
-components for a navbar, a card with links to different areas of the club, a search section with a
-typing effect and animated icons, and an about section with information about the club's values and
-activities. The code also imports images and uses Framer Motion and React Tooltip libraries for
-animation and tooltips. */
+
 import './App.css';
 import React, { Component } from "react";
-import Slider from "react-slick";
-import { useEffect } from "react";
 import './button.css';
 import './card.css';
 import images from './components/importImages';
@@ -15,8 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
+import { memberDB } from './member';
 class Hero extends Component {
    head = (
 
@@ -137,17 +130,6 @@ class Hero extends Component {
       <button className="btn explore">LEARN MORE</button>
       <button className="btn see">SEE OUR WORK</button>
     </div>
-    <div className="input-group seeinput">
-      <input
-        type="email"
-        className="input"
-        id="Email"
-        name="Email"
-        placeholder="Leave your email address here..."
-        autoComplete="off"
-      />
-      <input className="button--submit" defaultValue="Subscribe" type="submit" />
-    </div>
 
     
     </>
@@ -162,8 +144,8 @@ class Hero extends Component {
     
   description = (
     <div className='description' >
-        <h1 className='who'data-aos="fade-right" data-aos-duration="700">ABOUT US</h1>
-        <div className="article" data-aos="fade-right" data-aos-duration="700">
+        <h1 className='who'>ABOUT US</h1>
+        <div className="article" >
           <span>
             <img src={images['connecting.jpg']} />
             <h4>CONNECTING US</h4> 
@@ -186,10 +168,10 @@ class Hero extends Component {
           </span>
         </div>
         <section className='answer'>
-          <div className='bgp'><p data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"> "We are a multimedia club that specializes in video production, graphic design, music, and other related activities. Our members possess expertise in multimedia software and hardware technologies, as well as creative and design skills."</p></div>
-          <div className='bgp'><p data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
+          <div className='bgp'><p> "We are a multimedia club that specializes in video production, graphic design, music, and other related activities. Our members possess expertise in multimedia software and hardware technologies, as well as creative and design skills."</p></div>
+          <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
         </section>
-        <div className='imgblock' data-aos="fade-right" data-aos-duration="700">
+        <div className='imgblock'>
           <img className='img img1' src={images['bg1.jpg']}></img>
           <img className='img img2' src={images['bg2.jpg']}></img>
           <img className='img img3' src={images['bg3.jpg']}></img>
@@ -218,146 +200,64 @@ class Hero extends Component {
     );
   }
 }
-const settings = {
-  className: "about",
-  dots: true,
-  infinite: false,
-  speed: 1000,
-  slidesToShow: 5,
-  swipeToSlide: true,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-
-        dots: true,
-        swipeToSlide: true,
-      }
-    },  
-  ]
-};
 class About extends Component {
   
   about = (
     <>
-    <h1 className="memberintro" data-aos="fade-right" data-aos-duration="700">OUR LEADERS</h1>
-    <div className="about " data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
-    <Slider {...settings}>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['Tinh.jpg']} className="card-avatar" />
-          <div className="card-title">Nguyễn Lý Tính</div>
-          <div className="card-subtitle">
-            10TH - Nguyen Dinh Chieu<br></br>
-            CEO &amp; Co-Founder
-            
+    <h1 className="memberintro">OUR LEADERS</h1>
+    <div className="about ">
+      {memberDB.map((item) => (
+        <div className="cardmain">
+          <div className="card-info">
+            <img src={item.avatar} className="card-avatar" />
+            <div className="card-title">{item.name}</div>
+            <div className="card-subtitle">
+              <div style={{ color: '#9f9c9c',fontSize: '1.1vw' }}>{item.andress}<br></br></div>
+              {item.roles.map((role) => (
+                  <span>{role}<br/></span>
+              ))}
+
             </div>
+          </div>
+          <ul className="card-social">
+            {item.facebook && (
+              <li className="card-social__item">
+                <a href={item.facebook} target="_blank"><img className='icon' src={images['facebook.png']}  ></img></a>
+              </li>
+            )}
+            {item.youtube && (
+              <li className="card-social__item">
+                <a href={item.youtube} target="_blank"><img className='icon' src={images['youtube.png']} ></img></a>
+              </li>
+            )}
+            {item.twitter && (
+              <li className="card-social__item">
+                <a href={item.twitter} target="_blank"><img className='icon' src={images['twitter.png']} ></img></a>
+              </li>
+            )}
+            {item.instagram && (
+              <li className="card-social__item">
+                <a href={item.instagram} target="_blank"><img className='icon' src={images['instagram.png']} ></img></a>
+              </li>
+            )}
+            {item.discord && (
+              <li className="card-social__item">
+                <a href={item.discord} target="_blank"><img className='icon' src={images['discord.png']} ></img></a>
+              </li>
+            )}
+            {item.tiktok && (
+              <li className="card-social__item">
+                <a href={item.tiktok} target="_blank"><img className='icon' src={images['tik-tok.png']} ></img></a>
+              </li>
+            )}
+            {item.github && (
+              <li className="card-social__item">
+                <a href={item.github} target="_blank"><img className='icon' src={images['github.png']} ></img></a>
+              </li>
+            )}
+          </ul>
         </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['Bao.jpg']} className="card-avatar" />
-          <div className="card-title">Phạm Ngọc Gia Bảo</div>
-          <div className="card-subtitle">10T - Nguyen Dinh Chieu<br></br>Frontend Developer</div>
-        </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['khai.jpg']} className="card-avatar" />
-          <div className="card-title">Lê Trường Khải</div>
-          <div className="card-subtitle">10T - Nguyen Dinh Chieu <br></br>Data Analyst &amp; Scientist</div>
-        </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['nguyen.jpg']} className="card-avatar" />
-          <div className="card-title">Phan Thành Nguyên</div>
-          <div className="card-subtitle">10L - Nguyen Dinh Chieu<br></br>Backend Developer</div>
-        </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['tuyen.jpg']} className="card-avatar" />
-          <div className="card-title">Cao Bích Tuyền</div>
-          <div className="card-subtitle">10T - Nguyen Dinh Chieu <br></br>Actor &amp; Artist</div>
-        </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-      <div className="cardmain">
-        <div className="card-info">
-          <img src={images['tvu.jpg']} className="card-avatar" />
-          <div className="card-title">Huỳnh Tuấn Vũ</div>
-          <div className="card-subtitle">10L - Nguyen Dinh Chieu <br></br>UI/UX Designer</div>
-        </div>
-        <ul className="card-social">
-          <li className="card-social__item">
-          <img className='icon' src={images['facebook.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['youtube.png']} ></img>
-          </li>
-          <li className="card-social__item">
-          <img className='icon' src={images['twitter.png']} ></img>
-          </li>
-        </ul>
-      </div>
-    </Slider>
+      ))}
     </div>
     </>
   );
