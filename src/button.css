@@ -12,17 +12,16 @@
     position: relative;
     width: 15vw;
     height: 3.5vw;
-    font-weight: 400;
+    font-weight: 500;
     background: rgba(255, 255, 255);
     border: 2px solid grey;
     color: rgb(0, 0, 0);
     border-radius: 0.5em;
     font-size: 2vw;
-    font-weight: bold;
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
-    font-family: "Comfortaa";
+
     font-size: 1.6vw;
     transition: all 0.5s;   
     

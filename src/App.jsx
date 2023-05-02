@@ -168,7 +168,7 @@ class Hero extends Component {
           </span>
         </div>
         <section className='answer'>
-          <div className='bgp'><p> "We are a multimedia club that specializes in video production, graphic design, music, and other related activities. Our members possess expertise in multimedia software and hardware technologies, as well as creative and design skills."</p></div>
+          <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
           <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
         </section>
         <div className='imgblock'>
