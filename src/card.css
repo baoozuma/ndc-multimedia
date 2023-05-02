@@ -96,15 +96,15 @@
     .card {
         justify-content: center !important;
         margin: auto !important;
-        margin-top: 7vw !important;
-        width: 80vw;
-        height: 60vw;
+        margin-top: 26vw !important;
+        width: 85vw;
+        height: 80vw;
     }
     .card a span {
         font-size: 3vw;
     }
     .card a {
-      height: 40vw;
+      height: 58vw;
     }
 }
 .about {
