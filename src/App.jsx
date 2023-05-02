@@ -212,7 +212,7 @@ class About extends Component {
             <img src={item.avatar} className="card-avatar" />
             <div className="card-title">{item.name}</div>
             <div className="card-subtitle">
-              <div style={{ color: '#9f9c9c',fontSize: '1.1vw' }}>{item.andress}<br></br></div>
+              <h3>{item.andress}<br></br></h3>
               {item.roles.map((role) => (
                   <span>{role}<br/></span>
               ))}

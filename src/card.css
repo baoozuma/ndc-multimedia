@@ -119,12 +119,13 @@
 .cardmain {
     border: 0.15vw solid rgb(171, 165, 165);
     font-family: 'Mulish';
-    width: 21vw;
-    height: 28vw;
+    width: 18vw;
+    height: 26vw;
     background: #17141d;
     padding: 3vw 3vw;
     transition: all 0.3s;
     line-height: 4vw;
+    
  }
  
  .card-info {
@@ -175,15 +176,17 @@
  /*Text*/
  .card-title {
     color: #ffffff;
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-weight: 600;
     line-height: 4vw;
  }
- 
+ .cardmain h3 {
+   font-weight: 500;
+ }
  .card-subtitle {
     text-align: center;
     color: #9f9c9c;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     line-height: 1.7rem;
  }
 
