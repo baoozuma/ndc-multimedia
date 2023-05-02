@@ -341,6 +341,7 @@ footer {
         grid-auto-rows: auto;
         display: grid;
         justify-items: center;
+        
         grid-template-areas:
         "logo logo logo logo" 
         "header header header header"
@@ -418,7 +419,7 @@ footer {
         grid-area: des;
         display: flex;
         flex-direction: column;
-
+        
         gap: 4vw
     }
     .description .img {
@@ -466,6 +467,10 @@ footer {
         font-size: 4vw;
     }
     .who {
+        display: flex;
+        justify-content: center;
+
+        margin: 0 auto;
         margin-top: 2vw;
         font-size: 8vw;
     }
