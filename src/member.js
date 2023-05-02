@@ -1,5 +1,16 @@
 import images from './components/importImages';
-
+const exampleDB = [
+    {
+        id: 1,
+        name: "name",
+        avatar: "imagefile",
+        andress: "Class - school",
+        roles: "role",
+        facebook: "https://www.facebook.com/rinncuto6mui",
+        discord: "http://discord.gg/eVgvc3e994",
+        twitter: "https://twitter.com/rinncuto",
+    },
+]
 export const memberDB = [
     {
         id: 1,
@@ -102,8 +113,57 @@ export const memberDB = [
         youtube: "none",
         tiktok: "none",
     },
-
-
+    {
+        id: 11,
+        name: "Taron Marijana",
+        avatar: "https://i.pravatar.cc/300",
+        andress: "10TH - Nguyen Dinh Chieu",
+        roles: ["Writer & Director"],
+        facebook: "https://www.facebook.com/profile.php?id=100064135344554",
+        youtube: "none",
+        tiktok: "none",
+    },
+    {
+        id: 12,
+        name: "Taron Marijana",
+        avatar: "https://i.pravatar.cc/400",
+        andress: "10TH - Nguyen Dinh Chieu",
+        roles: ["Content Creator"],
+        facebook: "https://www.facebook.com/profile.php?id=100064135344554",
+        youtube: "none",
+        tiktok: "none",
+    },
+    {
+        id: 13,
+        name: "Zaynah Rush",
+        avatar: "https://i.pravatar.cc/500",
+        andress: "10TH - Nguyen Dinh Chieu",
+        roles: ["Writer & Director"],
+        facebook: "https://www.facebook.com/profile.php?id=100064135344554",
+        youtube: "none",
+        tiktok: "none",
+    },
+    {
+        id: 14,
+        name: "Henri Mcconnell",
+        avatar: "https://i.pravatar.cc/600",
+        andress: "10TH - Nguyen Dinh Chieu",
+        roles: ["Writer & Director"],
+        facebook: "https://www.facebook.com/profile.php?id=100064135344554",
+        youtube: "none",
+        tiktok: "none",
+    },
+    {
+        id: 15,
+        name: "Erin Reese",
+        avatar: "https://i.pravatar.cc/700",
+        andress: "10TH - Nguyen Dinh Chieu",
+        roles: ["Writer & Director"],
+        facebook: "https://www.facebook.com/profile.php?id=100064135344554",
+        youtube: "none",
+        tiktok: "none",
+    },
+    
 
 
     
