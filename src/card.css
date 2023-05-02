@@ -230,7 +230,7 @@
     }
    
     .cardmain {
-        width: 40vw;
+        width: 30vw;
         height: 55vw;
         padding: 5vw 2vw;
 
@@ -260,14 +260,15 @@
      /*Text*/
      .card-title {
         color: #ffffff;
-        font-size: 2.5vw;
+        font-size: 2vw;
         font-weight: 600;
-        line-height: 8vw;
+        line-height: 5vw;
      }
      
      .card-subtitle {
-        color: #7f7d7d;
-        font-size: 2.2vw;
+        color: #b7b3b3;
+        font-size: 1.6vw;
+        line-height: 4vw;
      }
      
      /*Hover*/
