@@ -98,7 +98,7 @@
         margin: auto !important;
         margin-top: 26vw !important;
         width: 85vw;
-        height: 80vw;
+        height: 85vw;
     }
     .card a span {
         font-size: 3vw;
@@ -107,6 +107,8 @@
       height: 58vw;
     }
 }
+
+
 .about {
    justify-content: center;
    display: flex;

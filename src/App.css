@@ -411,7 +411,7 @@ footer {
     .description {
         height: 100%;
         padding: 2vw;
-        margin-top: 5vw;
+        margin-top: 50vw;
 
         color: white;
         grid-area: des;
