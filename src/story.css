@@ -9,9 +9,10 @@
   display: flex;
   flex-direction: column;
   grid-area: story;
-  margin: 2vw;
+  margin: 3vw;
 }
 .story section {
+  margin: 2vw auto;
   display: flex;
   width: 100% !important;
   gap: 4vw;
@@ -67,8 +68,7 @@
   border-radius: 50%;
 }
 .story .stand {
-  padding: 0;
-  height: 30vw;
+  scale : 1.5;
   width: auto;
   box-shadow: none;
   margin: 0 auto;
@@ -95,7 +95,7 @@
   justify-content: center;
   gap: 1vw !important;
   padding: 0;
-  margin: 0;
+  margin-top: 5vw;
 }
 .big p {
   text-align: center;
@@ -106,7 +106,7 @@
 }
 @media screen and (max-width: 960px) {
   .story section {
-    margin: 6vw auto;
+    margin: 4vw auto;
   }
   .story blockquote h3 {
     font-size: 3vw;
