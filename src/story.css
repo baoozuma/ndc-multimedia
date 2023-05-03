@@ -6,6 +6,7 @@
   --distance: 46%;
 }
 .story {
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   grid-area: story;
@@ -115,7 +116,7 @@
   }
   .story blockquote p {
     margin: 0 auto;
-    font-size: 2vw;
+      
     line-height: 3vw;
   }
 }

@@ -12,6 +12,61 @@ import 'aos/dist/aos.css';
 import { memberDB } from './contentDatabase/member';
 import { aboutDB } from './contentDatabase/about4parts';
 import { stories } from './contentDatabase/story';
+import { Link, animateScroll as scroll } from 'react-scroll';
+const card = (index) => {
+  return (
+    <div className="cardmain" data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">
+    <div className="card-info">
+      <img src={memberDB[index].avatar} className="card-avatar" />
+      <div className="card-title">{memberDB[index].name}</div>
+      <div className="card-subtitle">
+        <h3>{memberDB[index].address}<br></br></h3>
+        {memberDB[index].roles.map((role) => (
+            <span>{role}<br/></span>
+        ))}
+        <p className='de'>{memberDB[index].description}</p>
+      </div>
+    </div>
+    <ul className="card-social">
+      {memberDB[index].facebook && (
+        <li className="card-social__item">
+          <a href={memberDB[index].facebook} target="_blank"><img className='icon' src={images['facebook.png']}  ></img></a>
+        </li>
+      )}
+      {memberDB[index].youtube && (
+        <li className="card-social__item">
+          <a href={memberDB[index].youtube} target="_blank"><img className='icon' src={images['youtube.png']} ></img></a>
+        </li>
+      )}
+      {memberDB[index].twitter && (
+        <li className="card-social__item">
+          <a href={memberDB[index].twitter} target="_blank"><img className='icon' src={images['twitter.png']} ></img></a>
+        </li>
+      )}
+      {memberDB[index].instagram && (
+        <li className="card-social__item">
+          <a href={memberDB[index].instagram} target="_blank"><img className='icon' src={images['instagram.png']} ></img></a>
+        </li>
+      )}
+      {memberDB[index].discord && (
+        <li className="card-social__item">
+          <a href={memberDB[index].discord} target="_blank"><img className='icon' src={images['discord.png']} ></img></a>
+        </li>
+      )}
+      {memberDB[index].tiktok && (
+        <li className="card-social__item">
+          <a href={memberDB[index].tiktok} target="_blank"><img className='icon' src={images['tik-tok.png']} ></img></a>
+        </li>
+      )}
+      {memberDB[index].github && (
+        <li className="card-social__item">
+          <a href={memberDB[index].github} target="_blank"><img className='icon' src={images['github.png']} ></img></a>
+        </li>
+      )}
+    </ul>
+  </div>
+  )
+}
 class Hero extends Component {
    head = (
 
@@ -56,21 +111,56 @@ class Hero extends Component {
   );
   card = (
     <div className="card intro">
-      <a className="card1">
+      <Link
+        activeClass="active"
+        to="design"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={3000}
+        className="card1">
         <span>Thiết kế</span>
-      </a>
-      <a className="card2">
+      </Link>
+      <Link 
+        activeClass="active"
+        to="film"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={3000}
+        className="card2">
         <span>Dựng phim</span>
-      </a>
-      <a className="card3">
+      </Link>
+      <Link
+        activeClass="active"
+        to="media"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={3000} 
+        className="card3">
         <span>Truyền thông</span>
-      </a>
-      <a className="card4">
+      </Link>
+      <Link
+        activeClass="active"
+        to="dev"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={3000} 
+        className="card4">
         <span>Lập trình</span>
-      </a>
-      <a className="card5">
+      </Link>
+      <Link
+        activeClass="active"
+        to="cast"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={3000} 
+        className="card5">
         <span>Điện ảnh</span>
-      </a>
+      </Link>
     </div>
   );
   line = (
@@ -129,8 +219,20 @@ class Hero extends Component {
         
     </div>
     <div className="startbutton">
-      <button className="btn explore">LEARN MORE</button>
-      <button className="btn see">SEE OUR WORK</button>
+    <Link
+      activeClass="active"
+      to="description"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={1000}><button className="btn explore">LEARN MORE</button></Link>
+    <Link
+      activeClass="active"
+      to="about"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={3000}><button className="btn see">SEE OUR WORK</button></Link>
     </div>
 
     
@@ -217,64 +319,93 @@ class Hero extends Component {
     );
   }
 }
+
 class About extends Component {
   
   about = (
     <>
-    <h1 className="memberintro">OUR LEADERS</h1>
-    <div className="about ">
-      {memberDB.map((item) => (
-        <div className="cardmain" data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">
-          <div className="card-info">
-            <img src={item.avatar} className="card-avatar" />
-            <div className="card-title">{item.name}</div>
-            <div className="card-subtitle">
-              <h3>{item.andress}<br></br></h3>
-              {item.roles.map((role) => (
-                  <span>{role}<br/></span>
-              ))}
-
-            </div>
-          </div>
-          <ul className="card-social">
-            {item.facebook && (
-              <li className="card-social__item">
-                <a href={item.facebook} target="_blank"><img className='icon' src={images['facebook.png']}  ></img></a>
-              </li>
-            )}
-            {item.youtube && (
-              <li className="card-social__item">
-                <a href={item.youtube} target="_blank"><img className='icon' src={images['youtube.png']} ></img></a>
-              </li>
-            )}
-            {item.twitter && (
-              <li className="card-social__item">
-                <a href={item.twitter} target="_blank"><img className='icon' src={images['twitter.png']} ></img></a>
-              </li>
-            )}
-            {item.instagram && (
-              <li className="card-social__item">
-                <a href={item.instagram} target="_blank"><img className='icon' src={images['instagram.png']} ></img></a>
-              </li>
-            )}
-            {item.discord && (
-              <li className="card-social__item">
-                <a href={item.discord} target="_blank"><img className='icon' src={images['discord.png']} ></img></a>
-              </li>
-            )}
-            {item.tiktok && (
-              <li className="card-social__item">
-                <a href={item.tiktok} target="_blank"><img className='icon' src={images['tik-tok.png']} ></img></a>
-              </li>
-            )}
-            {item.github && (
-              <li className="card-social__item">
-                <a href={item.github} target="_blank"><img className='icon' src={images['github.png']} ></img></a>
-              </li>
-            )}
-          </ul>
-        </div>
-      ))}
+    <h1 className="memberintro">SEE OUR TEAMS</h1>
+    
+    <div className="about">
+      <div className='plat'>
+        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+          <blockquote>
+            <h2 className='design'>DESIGN TEAM</h2>
+            <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
+          </blockquote>
+          <img className="page"src={images['designteam.png']}></img>
+        </section>
+        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <section className="cardgroup">
+          {card(0)}
+          {card(4)}
+          {card(5)}
+          {card(6)}
+        </section>
+      </div>
+      <div className='plat'>
+        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+        <img className="page"src={images['webpage.png']}></img>
+          <blockquote>
+            <h2 className='dev'>SOFTWARE TEAM</h2>
+            <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
+          </blockquote>
+        </section>
+        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <section className="cardgroup">
+          {card(1)}
+          {card(2)}
+          {card(3)}
+        </section>
+      </div>
+      <div className='plat'>
+        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+          <blockquote>
+            <h2 className='film'>FLIM PRODUCTION TEAM</h2>
+            <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
+          </blockquote>
+          <img className="page"src={images['film.jpg']}></img>
+        </section>
+        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <section className="cardgroup">
+          {card(7)}
+          {card(8)}
+          {card(9)}
+          {card(10)}
+        </section>
+      </div>
+      <div className='plat'>
+        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+          <blockquote>
+            <h2 className='media'>MEDIA TEAM</h2>
+            <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
+          </blockquote>
+            <img className="page"src={images['media.jpg']}></img>
+        </section>
+        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <section className="cardgroup">
+          {card(11)}
+          {card(12)}
+          {card(13)}
+          {card(14)}
+        </section>
+      </div>
+      <div className='plat'>
+        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+          <blockquote>
+            <h2 className='cast'>CAST TEAM</h2>
+            <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
+          </blockquote>
+            <img className="page"src={images['cast.jpg']}></img>
+        </section>
+        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <section className="cardgroup">
+          {card(11)}
+          {card(12)}
+          {card(13)}
+          {card(14)}
+        </section>
+      </div>
     </div>
     </>
   );

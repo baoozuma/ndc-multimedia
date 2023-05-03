@@ -89,19 +89,87 @@
 }
 
 .about {
-  justify-content: center;
+  justify-content: center !important;
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1vw;
   grid-area: slide;
   padding: 0;
 }
+.about h2 {
+  text-align: center;
+  font-size: 4vw;
+  line-height: 2vw;
+  color: white;
+}
+.about .plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin: 4vw 0;
+}
+.about .p {
+  font-size: 1.8vw;
+  color: #b7b3b3;
+  width: 70vw;
+  text-align: center;
 
+  font-weight: 500;
+}
+.about .de {
+  font-weight: 400;
+  font-size: 1.1vw;
+  color: white;
+}
+.page {
+  border: 0.15vw solid white;
+  width: auto;
+  height: 25vw;  
+  transition: all 0.3s;
+}
+.page:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
+}
+.about .field {
+  margin: 0vw 5vw 5vw 5vw;
+  gap: 3vw;
+  display: flex;
+}
+.about blockquote {
+  gap: 1vw;
+  line-height: 3vw;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+}
+.about blockquote p{
+
+  margin: 0 auto;
+  font-size: 2vw;
+  line-height: 3vw;
+  color: #b7b3b3;
+  font-weight: 500;
+}
+
+.cardgroup {
+  padding: 0vw 2vw;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
 .cardmain {
   border: 0.15vw solid rgb(171, 165, 165);
-  font-family: "Mulish";
-  width: 16vw;
-  height: 26vw;
+
+  width: 22vw;
+  height: 32vw;
   background: #17141d;
   padding: 3vw 2vw;
   transition: all 0.3s;
@@ -155,7 +223,7 @@
 /*Text*/
 .card-title {
   color: #ffffff;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 600;
   line-height: 4vw;
 }
@@ -165,8 +233,8 @@
 .card-subtitle {
   text-align: center;
   color: #9f9c9c;
-  font-size: 0.75vw;
-  line-height: 1.7rem;
+  font-size: 1vw;
+  line-height: 1.9rem;
 }
 
 /*Hover*/
@@ -208,12 +276,17 @@
   .about {
     gap: 0.4vw;
   }
-  .cardmain {
-    width: 31vw;
-    height: 57vw;
-    padding: 5vw 2vw;
+  .about h2 {
+    font-size: 4vw;
   }
-
+  .cardmain {
+    width: 44vw;
+    height: 70vw;
+    padding: 7vw 2vw;
+  }
+  .cardgroup {
+    padding: 0;
+  }
   /*Image*/
   .card-avatar {
     --size: 15vw;
@@ -237,15 +310,23 @@
   /*Text*/
   .card-title {
     color: #ffffff;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     line-height: 5vw;
   }
 
   .card-subtitle {
     color: #b7b3b3;
-    font-size: 1.6vw;
+    font-size: 2vw;
     line-height: 4vw;
+  }
+  .about .de {
+    margin: 2vw;
+    font-size: 2vw;
+  }
+  .about .p {
+    margin: 2vw;
+    font-size: 3vw;
   }
   /*Hover*/
   .cardmain:hover .card-info {
