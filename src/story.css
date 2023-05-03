@@ -68,10 +68,10 @@
   border-radius: 50%;
 }
 .story .stand {
-  scale : 1.5;
+
   width: auto;
   box-shadow: none;
-  margin: 0 auto;
+  margin: 3vw auto;
 }
 .story blockquote {
   justify-content: center;
@@ -81,6 +81,7 @@
   flex-direction: column;
 }
 .story blockquote h3 {
+  line-height: 3vw;
   font-size: 3vw;
   margin: 0 auto;
 }
