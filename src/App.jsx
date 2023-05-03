@@ -328,14 +328,14 @@ class About extends Component {
     
     <div className="about">
       <div className='plat'>
-        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+        <section className="field"data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
           <blockquote>
             <h2 className='design'>DESIGN TEAM</h2>
             <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
           </blockquote>
           <img className="page"src={images['designteam.png']}></img>
         </section>
-        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <p className='p' data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
         <section className="cardgroup">
           {card(0)}
           {card(4)}
@@ -351,7 +351,7 @@ class About extends Component {
             <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
           </blockquote>
         </section>
-        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <p className='p' data-aos="fade-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
         <section className="cardgroup">
           {card(1)}
           {card(2)}
@@ -359,14 +359,14 @@ class About extends Component {
         </section>
       </div>
       <div className='plat'>
-        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+        <section className="field"data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
           <blockquote>
             <h2 className='film'>FLIM PRODUCTION TEAM</h2>
             <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
           </blockquote>
           <img className="page"src={images['film.jpg']}></img>
         </section>
-        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <p className='p' data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
         <section className="cardgroup">
           {card(7)}
           {card(8)}
@@ -376,13 +376,14 @@ class About extends Component {
       </div>
       <div className='plat'>
         <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+        <img className="page"src={images['media.jpg']}></img>
           <blockquote>
             <h2 className='media'>MEDIA TEAM</h2>
             <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
           </blockquote>
-            <img className="page"src={images['media.jpg']}></img>
+            
         </section>
-        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <p className='p' data-aos="fade-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
         <section className="cardgroup">
           {card(11)}
           {card(12)}
@@ -391,14 +392,14 @@ class About extends Component {
         </section>
       </div>
       <div className='plat'>
-        <section className="field"data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+        <section className="field"data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
           <blockquote>
             <h2 className='cast'>CAST TEAM</h2>
             <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>
           </blockquote>
             <img className="page"src={images['cast.jpg']}></img>
         </section>
-        <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
+        <p className='p' data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.</p>
         <section className="cardgroup">
           {card(11)}
           {card(12)}
