@@ -177,7 +177,7 @@ class Hero extends Component {
         <div className="article" >
           
           {aboutDB.map((item) => (
-            <span data-aos="fade-up"  data-aos-duration="500" data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-once="true">
+            <span data-aos="fade-up"  data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
               <img src={item.image} />
               <h4>{item.title}</h4> 
               <p>{item.description}</p>
