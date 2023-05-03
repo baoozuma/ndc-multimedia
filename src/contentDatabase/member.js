@@ -209,7 +209,7 @@ export const memberDB = [
         avatar: images["david.png"],
         address: "321 Broadway, San Francisco, CA",
         roles: ["Product Manager"],
-        description: "Experienced in leading cross-functional teams to deliver innovative software products.",
+        description: "Experienced in leading teams to deliver software products.",
         facebook: "https://www.linkedin.com/in/davidkim/",
         twitter: "https://twitter.com/davidkim",
         youtube: "https://davidkim.medium.com/",
@@ -235,7 +235,7 @@ export const memberDB = [
         avatar: images["michael.jpg"],
         address: "555 Pine Street, Los Angeles, CA",
         roles: ["Sales Manager"],
-        description: "Experienced in managing sales teams and developing sales strategies.",
+        description: "Experienced in managing and developing sales.",
         facebook: "https://www.linkedin.com/in/michael-rodriguez/",
         twitter: "https://twitter.com/michaelrodriguez",
         github: "https://www.michaelrodriguezsales.com/"
