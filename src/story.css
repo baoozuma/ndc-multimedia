@@ -10,7 +10,7 @@
     margin: 2vw;
 }
 .story section {
-    margin: 3vw 0;
+    margin: 6vw 0;
     display: flex;
     width: 100% !important;
     gap: 4vw;
@@ -20,6 +20,7 @@
 .border {
     position: relative;
     padding: 30px;
+    transition: all 0.3s;
   }
 .border::after {
     content: '';
@@ -51,7 +52,14 @@
     height: 25vw;
     width: 25vw;
     box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
+    transition: all 0.3s;
 }
+.story img:hover, .border:hover {
+  transform: scale(1.1);
+  
+}
+
+
 .story .girl {
     border-radius: 999px;
     display: block;
@@ -61,7 +69,11 @@
     border-radius: 50%;
 }
 .story .stand {
-    border : 0.7vw solid black;
+  padding : 0;
+    height: 30vw;
+    width: auto ;
+    box-shadow: none;
+    margin: 0 auto;
 }
 .story blockquote {
     justify-content: center;
@@ -80,4 +92,19 @@
     margin: 0 auto;
     font-size: 2vw;
     line-height: 3vw;
+}
+.big {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap : 1vw !important;
+  padding : 0;
+  margin: 0;
+}
+.big p {
+  text-align: center;
+  width: 80vw;
+}
+.big blockquote {
+  padding: 0;
 }

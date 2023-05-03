@@ -74,7 +74,7 @@ class Hero extends Component {
     </div>
   );
   line = (
-    <div className="line" data-aos="fade-left">This is a line</div>
+    <div className="line" >This is a line</div>
   )
   background = (
     <div className='Hero-background'></div>
@@ -148,26 +148,27 @@ class Hero extends Component {
     <div className='description' >
         <h1 className='who'>ABOUT US</h1>
         <div className="story">
-        <section>
+        <section data-aos="fade-right" data-aos-once="true" data-aos-duration="500"data-aos-easing="ease-in-out">
           <div className="border"><img className='girl' src={stories[0].image} ></img></div>
           <blockquote>
             <h3>{stories[0].title}</h3>
             <p>{stories[0].description}</p>
           </blockquote>
         </section>
-        <section>
+        <section data-aos="fade-left" data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
           <blockquote>
             <h3>{stories[1].title}</h3>
             <p>{stories[1].description}</p>
           </blockquote>
           <div><img className='boy' src={stories[1].image} ></img></div>
         </section>
-        <section className='big'>
-        <div><img className='stand' src={stories[2].image} ></img></div>
+        <section className='big' data-aos="fade-up"  data-aos-once="true" data-aos-duration="800"  data-aos-easing="ease-in-out">
+        
           <blockquote>
             <h3>{stories[2].title}</h3>
             <p>{stories[2].description}</p>
           </blockquote>
+          <img className='stand' src={stories[2].image} ></img>
           
           
         </section>
@@ -176,18 +177,18 @@ class Hero extends Component {
         <div className="article" >
           
           {aboutDB.map((item) => (
-            <span>
+            <span data-aos="fade-up"  data-aos-duration="500" data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-once="true">
               <img src={item.image} />
               <h4>{item.title}</h4> 
               <p>{item.description}</p>
             </span>
           ))}
         </div>
-        <section className='answer'>
+        <section className='answer' data-aos="fade-up"data-aos-once="true" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-delay="200">
           <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
           <div className='bgp'><p> "Additionally, our team members are equipped with exceptional creative and design skills, which enables us to deliver high-quality and captivating multimedia content that stands out from the rest."</p></div>
         </section>
-        <div className='imgblock'>
+        <div className='imgblock' data-aos="fade-up" data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
           <img className='img img1' src={images['bg1.jpg']}></img>
           <img className='img img2' src={images['bg2.jpg']}></img>
           <img className='img img3' src={images['bg3.jpg']}></img>
@@ -223,7 +224,7 @@ class About extends Component {
     <h1 className="memberintro">OUR LEADERS</h1>
     <div className="about ">
       {memberDB.map((item) => (
-        <div className="cardmain">
+        <div className="cardmain" data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">
           <div className="card-info">
             <img src={item.avatar} className="card-avatar" />
             <div className="card-title">{item.name}</div>
@@ -291,7 +292,7 @@ const App = () => {
   AOS.init();
 
   return (
-    <body className='body bg-gradient-to-bl from-gray-800 via-gray-900 to-black'>
+    <body className='body'>
       <div></div>
       <Hero />
       <About />
