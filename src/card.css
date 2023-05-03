@@ -31,29 +31,14 @@
   background-size: cover;
   text-decoration: none;
 }
-.card a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 0.7s;
-  z-index: 1;
-}
 
-.card :hover::before {
-  opacity: 0;
-}
 .card a:hover {
   flex: 3;
   display: flex;
 }
 
 .card .card1 {
-  background-image: url("./assets/Kim Junmyeon.jpg");
+  background-image: url("./assets/design.png");
 }
 .card .card2 {
   background-image: url("./assets/filming.jpg");
@@ -76,7 +61,7 @@
   transform: rotate(-90deg);
   transition: all 0.5s;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #dfdfdf;
   font-weight: 400;
   font-size: 1.8vw;
   letter-spacing: 0.1em;

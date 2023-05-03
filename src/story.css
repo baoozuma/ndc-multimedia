@@ -20,7 +20,7 @@
 }
 .border {
   position: relative;
-  padding: 30px;
+  padding: 1.875rem;
   transition: all 0.3s;
 }
 .border::after {
