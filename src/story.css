@@ -106,6 +106,15 @@
 }
 @media screen and (max-width: 960px) {
   .story section {
-    margin: 14vw 0;
+    margin: 6vw auto;
+  }
+  .story blockquote h3 {
+    font-size: 3vw;
+    margin: 0 auto;
+  }
+  .story blockquote p {
+    margin: 0 auto;
+    font-size: 2vw;
+    line-height: 3vw;
   }
 }
