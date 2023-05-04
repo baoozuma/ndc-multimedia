@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   grid-area: story;
-  margin: 3vw;
+  margin: 4vw;
 }
 .story section {
   margin: 2vw auto;
@@ -51,8 +51,8 @@
   );
 }
 .story img {
-  height: 25vw;
-  width: 25vw;
+  height: 20vw;
+  width: 20vw;
   box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
   transition: all 0.3s;
 }
@@ -72,7 +72,7 @@
 
   width: auto;
   box-shadow: none;
-  margin: 3vw auto;
+  margin: 1vw auto;
 }
 .story blockquote {
   justify-content: center;
@@ -88,10 +88,11 @@
 }
 .story blockquote p {
   margin: 0 auto;
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 3vw;
 }
 .big {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,7 +117,7 @@
   }
   .story blockquote p {
     margin: 0 auto;
-      
+    font-size: 2vw;
     line-height: 3vw;
   }
 }

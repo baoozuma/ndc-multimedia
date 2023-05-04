@@ -100,7 +100,7 @@
 }
 .about h2 {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 4vw;
   color: white;
 }
@@ -110,10 +110,10 @@
   justify-content: center;
   align-items: center;
   gap: 2vw;
-  margin: 4vw 0;
+  margin: 2vw 0;
 }
 .about .p {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   color: #b7b3b3;
   width: 70vw;
   text-align: center;
@@ -128,7 +128,7 @@
 .page {
   border: 0.15vw solid white;
   width: auto;
-  height: 25vw;  
+  height: 18vw;  
   transition: all 0.3s;
 }
 .page:hover {
@@ -151,7 +151,7 @@
 .about blockquote p{
 
   margin: 0 auto;
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 3vw;
   color: #b7b3b3;
   font-weight: 500;
@@ -331,5 +331,24 @@
   /*Hover*/
   .cardmain:hover .card-info {
     transform: translateY(-5%);
+  }
+  .about blockquote {
+    gap: 1vw;
+    line-height: 3vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .about blockquote p{
+  
+    margin: 0 auto;
+    font-size: 2vw;
+    line-height: 3vw;
+    color: #b7b3b3;
+    font-weight: 500;
+  }
+  .page {
+    height: 25vw;
   }
 }
