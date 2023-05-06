@@ -172,7 +172,7 @@ h2.title {
   }
 }
 .description {
-  place-items: center;
+
   font-family: "Montserrat" !important;
   font-weight: 400;
   line-height: 2.5vw;
@@ -185,7 +185,7 @@ h2.title {
   gap: 0.5vw;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-areas:
-    "who dont dont "
+    "who who who "
     "story story story"
     "res res res"
     "contenter contenter contenter"
@@ -241,7 +241,6 @@ h2.title {
   font-weight: bolder;
   font-size: 4vw;
   padding-right: 0vw;
-  width: 60%;
 }
 .bgp {
   transition: all 0.3s;

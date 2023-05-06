@@ -1,4 +1,4 @@
-import images from '../components/importImages';
+import images from './importImages';
 export const stories = [
     {
         id: "camera",

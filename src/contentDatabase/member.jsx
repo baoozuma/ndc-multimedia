@@ -39,7 +39,7 @@ export const memberDB = [
         name: "Nguyễn Quốc Thái",
         avatar: images['qthai.jpg'],
         address: "10TH - @NguyenDinhChieu",
-        roles: ["Backend Developer"],
+        roles: ["Frontend Developer"],
         description:"Dabbling in social ecommerce, meta frameworks, and board games",
         facebook: "https://www.facebook.com/profile.php?id=100064135344554",
         youtube: "none",
