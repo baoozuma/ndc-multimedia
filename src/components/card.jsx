@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {memberDB} from "../contentDatabase/member";
+import {memberDB} from "../contentDatabase/Member";
 import images from "./importImages";
 export const card = (index) => {
     return (

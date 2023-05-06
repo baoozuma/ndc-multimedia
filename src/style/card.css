@@ -38,19 +38,19 @@
 }
 
 .card .card1 {
-  background-image: url("./assets/design.png");
+  background-image: url("../assets/design.png");
 }
 .card .card2 {
-  background-image: url("./assets/filming.jpg");
+  background-image: url("../assets/filming.jpg");
 }
 .card .card3 {
-  background-image: url("./assets/communication.jpg");
+  background-image: url("../assets/communication.jpg");
 }
 .card .card4 {
-  background-image: url("./assets/programming3.jpg");
+  background-image: url("../assets/programming3.jpg");
 }
 .card .card5 {
-  background-image: url("./assets/cinematic.jpg");
+  background-image: url("../assets/cinematic.jpg");
 }
 .card a span {
   display: flex;
@@ -126,14 +126,15 @@
   color: white;
 }
 .page {
-  border: 0.15vw solid white;
+  border: 0.15vw solid rgb(171, 165, 165);
   width: auto;
   height: 18vw;  
   transition: all 0.3s;
 }
 .page:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
+  border: 0.15vw solid rgb(249, 202, 115);
 }
 .about .field {
   margin: 0vw 5vw 5vw 5vw;
