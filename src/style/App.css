@@ -178,7 +178,7 @@ h2.title {
   font-weight: 400;
   line-height: 2.5vw;
   padding: 5vw;
-  margin-top: 5vw;
+  margin-top: 10vw;
   background-color: transparent;
   color: rgb(255, 255, 255);
   grid-area: des;
@@ -357,7 +357,7 @@ footer {
 @media screen and (max-width: 960px) {
   .body {
     height: 100% !important;
-
+    
     display: grid;
     place-content: center;
     align-content: center;
@@ -436,7 +436,7 @@ footer {
     grid-area: des;
     display: flex;
     flex-direction: column;
-
+    margin-top: 40vw;
     gap: 4vw;
   }
   .imgblock {

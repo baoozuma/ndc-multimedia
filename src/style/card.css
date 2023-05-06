@@ -76,9 +76,9 @@
   .card {
     justify-content: center !important;
     margin: auto !important;
-    margin-top: 26vw !important;
+    margin-top: 35vw !important;
     width: 85vw;
-    height: 85vw;
+    height: 78vw;
   }
   .card a span {
     font-size: 3vw;
