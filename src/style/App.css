@@ -392,8 +392,8 @@ footer {
     justify-content: center !important;
   }
   .logo {
+    margin:5vw 10vw;
     width: 10vw;
-    margin-right: 80vw;
   }
   .banner {
     margin-top: 8vw;

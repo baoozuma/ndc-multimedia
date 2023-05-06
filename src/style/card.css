@@ -89,8 +89,6 @@
 }
 
 .about {
-  justify-content: center !important;
-  align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -125,14 +123,14 @@
   color: white;
 }
 .page {
-  border: 0.15vw solid rgb(171, 165, 165);
+  
   width: auto;
   height: 18vw;  
-  transition: all 0.3s;
-  margin: auto;
+  border: 0.15vw solid rgb(171, 165, 165);
+  transition: all 0.3s !important;
 }
 .page:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
   border: 0.15vw solid rgb(249, 202, 115);
 }
@@ -242,11 +240,12 @@
 
 /*Hover*/
 .cardmain:hover {
+  transform: scale(1.1);
   box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
   border: 0.15vw solid rgb(249, 202, 115);
   position: relative;
   z-index: 10;
-  transform: scale(1.02);
+
 }
 
 .cardmain:hover .card-info {

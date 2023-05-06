@@ -2,6 +2,7 @@ import images from './importImages';
 import {card} from "./card";
 import React, { Component } from "react";
 import {field} from "../contentDatabase/Field";
+import '../style/card.css'
 
 class FieldInformation extends Component {
     render() {
