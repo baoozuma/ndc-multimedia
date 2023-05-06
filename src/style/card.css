@@ -137,7 +137,7 @@
   border: 0.15vw solid rgb(249, 202, 115);
 }
 .about .field {
-  margin: 0vw 5vw 5vw 5vw;
+  margin: 0vw 3vw 5vw 3vw;
   gap: 3vw;
   display: flex;
 }
@@ -351,5 +351,8 @@
   }
   .page {
     height: 25vw;
+  }
+  .about section {
+    padding: 0vw 2vw; 
   }
 }
