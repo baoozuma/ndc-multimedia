@@ -38,7 +38,7 @@
 }
 
 .card .card1 {
-  background-image: url("../assets/design.png");
+  background-image: url("../assets/designing.png");
 }
 .card .card2 {
   background-image: url("../assets/filming.jpg");
@@ -111,13 +111,12 @@
   align-items: center;
   gap: 2vw;
   margin: 2vw 0;
+  padding: 0 1vw;
 }
-.about .p {
-  font-size: 1.5vw;
-  color: #b7b3b3;
-  width: 70vw;
-  text-align: center;
 
+.about .p {
+  font-size: 1.3vw;
+  color: #ffffff;
   font-weight: 500;
 }
 .about .de {
@@ -130,6 +129,7 @@
   width: auto;
   height: 18vw;  
   transition: all 0.3s;
+  margin: auto;
 }
 .page:hover {
   transform: scale(1.05);
@@ -137,13 +137,15 @@
   border: 0.15vw solid rgb(249, 202, 115);
 }
 .about .field {
-  margin: 0vw 3vw 5vw 3vw;
+  margin: 0vw 3vw 3vw 3vw;
   gap: 3vw;
   display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .about blockquote {
   gap: 1vw;
-  line-height: 3vw;
+  line-height: 2vw;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -153,13 +155,13 @@
 
   margin: 0 auto;
   font-size: 1.5vw;
-  line-height: 3vw;
+  line-height: 2.5vw;
   color: #b7b3b3;
   font-weight: 500;
 }
 
 .cardgroup {
-  padding: 0vw 2vw;
+
   justify-content: center;
   margin: 0 auto;
   display: flex;
@@ -170,7 +172,7 @@
   border: 0.15vw solid rgb(171, 165, 165);
 
   width: 22vw;
-  height: 32vw;
+  height: 30vw;
   background: #17141d;
   padding: 3vw 2vw;
   transition: all 0.3s;
@@ -322,12 +324,9 @@
     line-height: 4vw;
   }
   .about .de {
+    
     margin: 2vw;
     font-size: 2vw;
-  }
-  .about .p {
-    margin: 2vw;
-    font-size: 3vw;
   }
   /*Hover*/
   .cardmain:hover .card-info {
@@ -349,8 +348,11 @@
     color: #b7b3b3;
     font-weight: 500;
   }
+  .about .p {
+    font-size: 2vw;
+  }
   .page {
-    height: 25vw;
+    height: 20vw;
   }
   .about section {
     padding: 0vw 2vw; 

@@ -11,24 +11,27 @@ class FieldInformation extends Component {
         <div className="about">
             {field.map((item) => (
                 <div className='plat'>
-                <section className="field"data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" >
+                
                 {item.position === "right" ? (
-                    <>
-                    <img className="page" src={item.image} />
-                    <blockquote>
+                    <section className="field" >
+                    <img className="page" src={item.image}  data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200"/>
+                    <blockquote data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200">
                         <h2 className={item.class}>{item.name}</h2>
-                        <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>                    </blockquote>
-                    </>
+                        
+                        <p>{item.title}<strong className='p'> {item.subtitle}</strong></p>                    
+                    </blockquote>
+                    </section>
                 ) : (
-                    <>
-                    <blockquote>
+                    <section className="field" >
+                    <blockquote data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200">
                         <h2 className={item.class}>{item.name}</h2>
-                        <p>Our team has created a multimedia webpage that showcases the best of our skills and creativity. From stunning visuals to engaging content, we have designed every element to captivate your senses and leave a lasting impression.</p>                    </blockquote>
-                    <img className="page" src={item.image} />
-                    </>
+                        <p>{item.title}<strong className='p'> {item.subtitle}</strong></p>                     
+                    </blockquote>
+                    <img className="page" src={item.image} data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200" />
+                    </section>
                 )}
-                </section>
-                <p className='p' data-aos="fade-right" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out">{item.subtitle}</p>
+                
+                
                 <section className="cardgroup">
                     {item.memberID.map((id) => (
                         card(id)

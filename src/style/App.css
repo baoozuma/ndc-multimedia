@@ -14,10 +14,11 @@ body {
   height: 100% !important;
   overflow: hidden;
   overflow-y: scroll;
+  
 }
 .body {
   overflow-y: hidden;
-
+  
   display: grid;
   width: 100% !important;
 
@@ -106,9 +107,9 @@ header {
 }
 .logo {
   z-index: 100;
-  filter: invert(100%);
-  margin: 2vw 0 0 4vw;
-  width: 7vw;
+  margin: 2vw 0 0 5vw;
+  width: 5vw;
+  scale: 2;
   grid-area: logo;
 }
 .navbar button {
@@ -335,7 +336,7 @@ footer {
 }
 .brand p {
   color: #b7b3b3;
-  line-height: 3vw;
+  line-height: 2.7vw;
   padding: 1vw 5vw;
   font-size: 1.5vw;
 }

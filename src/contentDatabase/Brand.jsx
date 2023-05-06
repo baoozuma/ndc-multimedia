@@ -3,17 +3,17 @@ export const Brand = [
     {
         id: 1,
         name: "React",
-        logo: images["react.png"],
+        logo: images["react.svg"],
     },
     {
         id: 2,
         name: "Vue.js",
-        logo: images["vue.png"],
+        logo: images["vue.svg"],
     },
     {
         id: 3,
         name: "Tailwind",
-        logo: images["tailwind.png"],
+        logo: images["tailwind.svg"],
     },
     {
         id: 4,
@@ -32,8 +32,8 @@ export const Brand = [
     },
     {
         id: 7,
-        name: "express.js",
-        logo: images["express.png"],
+        name: "SASS",
+        logo: images["sass.svg"],
     },
     {
         id: 8,
