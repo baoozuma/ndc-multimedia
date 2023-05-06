@@ -7,8 +7,11 @@ import React, { Component } from "react";
 class MainDescription extends Component {
     render() {
     return(
+        <>
+        
         <div className='description' >
         <h1 className='who'>ABOUT US</h1>
+        
         <div className="story">
         <section data-aos="fade-right" data-aos-once="true" data-aos-duration="500"data-aos-easing="ease-in-out">
           <div className="border"><img className='girl' src={stories[0].image} ></img></div>
@@ -60,6 +63,7 @@ class MainDescription extends Component {
           <img className='img' src={images['bg10.jpg']}></img>
         </div>
     </div>
+    </>
     )
     }
 }

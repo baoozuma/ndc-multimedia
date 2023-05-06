@@ -15,6 +15,7 @@ const App = () => {
   AOS.init();
   return (
     <body className='body'>
+      
       <HeroContainer/>
       <Navbar/>
       <CardIntro/>

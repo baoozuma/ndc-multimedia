@@ -6,8 +6,9 @@ class HeroContainer extends Component {
     render() {
     return(
         <>
+        <div className="background"></div>
         <div className="container">
-            <h2 className="title sub" id="typed-text"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>Donec tristique maximus metus, vel porttitor massa interdum sed.</h2>
+            <h2 className="title sub" id="typed-text">HI THERE, IT'S <strong>MULTIMEDIA CLUB</strong><br/>Are you a creative spirit looking for a fun way to express yourself? Let's get started!</h2>
             <div className="banner">
             <motion.div
                 animate={{

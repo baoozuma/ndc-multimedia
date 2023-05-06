@@ -7,9 +7,19 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+.background {
+
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+  position: absolute;
+  background-image:  url("../assets/headbg.jpg");
+  
+}
 
 body {
-  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at top, rgb(27, 39, 53) 0%, rgb(9, 10, 15) 100%);
   width: 100%;
   height: 100% !important;
   overflow: hidden;
@@ -108,8 +118,8 @@ header {
 .logo {
   z-index: 100;
   margin: 2vw 0 0 5vw;
-  width: 5vw;
-  scale: 2;
+  width: 4vw;
+  scale: 2.5;
   grid-area: logo;
 }
 .navbar button {
@@ -130,12 +140,11 @@ header {
 }
 
 h2.title {
-  font-family: "Mulish";
   z-index: -1;
   font-weight: 400;
   width: 40vw;
   color: rgb(255, 255, 255);
-  line-height: 2.3vw;
+  line-height: 2.5vw;
   font-size: 1.8vw;
   left: 0%;
 }
