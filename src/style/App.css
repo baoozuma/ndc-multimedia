@@ -121,6 +121,10 @@ header {
   width: 4vw;
   scale: 2.5;
   grid-area: logo;
+  transition: all 0.3s;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 .navbar button {
   border: none;
