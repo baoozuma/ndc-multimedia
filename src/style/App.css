@@ -58,6 +58,7 @@ body::-webkit-scrollbar-thumb:hover {
     "des des"
     "intro intro"
     "boxfield boxfield"
+    "feedback feedback"
     "member member"
     "sponsor sponsor"
     ;
@@ -65,9 +66,12 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 100vw;
 }
 h1 {
-  color: #d6f460;
+  color: #ffffff;
   font-weight: bolder;
-  font-size: 2.5vw !important;
+  font-size: 3vw !important;
+}
+h1 strong {
+  color: rgb(4, 141, 240);
 }
 .container {
   display: flex;
@@ -264,7 +268,7 @@ h2.title {
 }
 
 .who {
-  color: #d6f460;
+  color: #ffffff;
   grid-area: who;
   font-weight: bolder;
   font-size: 4vw;
@@ -383,16 +387,16 @@ footer {
   
 }
 .boxfield {
-  border-radius: 2vw;
+
   background-color: #0000006f;
   margin-bottom: 10vw;
-  padding: 2vw;
+  padding: 1vw 3vw;
   font-family: 'Montserrat' !important;
   grid-area: boxfield;
   margin: auto auto;
   align-items: center;
-  width: 95vw;
-  height: 50vw;
+  width: 100%;
+  height: 52vw;
   display: grid;
   grid-template-areas: 
   "title tabpanel"
@@ -416,8 +420,12 @@ footer {
   color: rgb(138, 138, 238);
 }
 .tabtitle {
+  
   padding-top: 3vw;
   grid-area: title;
+}
+.tabtitle h2 {
+  font-size: 2.5vw;
 }
 .tabfield {
   grid-area: tab;
@@ -444,7 +452,76 @@ footer {
   width: 3vw;
   height: auto;
 }
+.feedback {
+  display: flex;
+  justify-content: center;
 
+  grid-area: feedback;
+  height: 30vw;
+  background-color: #163759;
+  padding: 2vw;
+}
+.people {
+  justify-content: center;
+  top: 10%;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.person {
+  height: 30vw;
+  padding: 2vw;
+  width: 40vw;
+  display: flex !important;
+  flex-direction: column;
+  gap: 2vw;
+
+}
+.person img {
+  border: 0.15vw solid white;
+  border-radius: 50%;
+  width: 5vw;
+  height: auto;
+}
+.person q {
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 2.2vw;
+  color: white;
+}
+.person p strong {
+  font-size: 1.2vw;
+  font-weight: 500;
+  color: #ffffff;
+}
+.person p {
+  font-size: 1.2vw;
+  margin: auto 0;
+  color:rgba(233, 231, 231, 0.397)
+}
+.infor {
+  display: flex;
+
+  gap: 2vw;
+}
+.statistic {
+  justify-content: center;
+  margin: auto 0;
+  margin-left: 10vw;
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6vw;
+}
+.statistic p {
+  
+  font-size: 1.5vw;
+  color: white;
+}
+.statistic .amount {
+  color: lightskyblue
+}
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 5vw !important;
@@ -465,6 +542,7 @@ footer {
       "des des"
       "intro intro"
       "boxfield boxfield"
+      "feedback feedback"
       "member member"
       "sponsor sponsor"
       
@@ -532,7 +610,7 @@ footer {
     grid-area: des;
     display: flex;
     flex-direction: column;
-    margin-top: 45vw;
+    margin-top: 40vw;
     gap: 4vw;
   }
   .imgblock {
@@ -631,5 +709,40 @@ footer {
   }
   .tabtitle {
     margin: 4vw;
+  }
+  .feedback {
+    padding: 5vw 2vw;
+    flex-direction: column;
+    height: 70vw; 
+  }
+  .people {
+    line-height: 3vw;
+    top: 0;
+    margin: 0 auto;
+    width: 90%;
+
+  }
+  .person {
+    height: 50vw;
+  }
+  .person q {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+  .person img {
+    width: 7vw;
+  }
+  .person p {
+    font-size: 2vw;
+  }
+  .person p strong {
+    font-size: 2vw;
+  }
+  .statistic {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .statistic p {
+    font-size: 2vw;
   }
 }

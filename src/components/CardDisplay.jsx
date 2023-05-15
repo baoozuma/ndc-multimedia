@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import {memberDB} from "../contentDatabase/Member";
 import images from "./importImages";
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 
 const card = (index) => {
     return (
@@ -63,7 +61,7 @@ class CardDisplay extends Component {
     return(
       <div className="cardmember">
 
-        <h1>SEE OUR MEMBERS</h1>
+        <h1>See all of our<strong>&nbsp;core member</strong></h1>
         <div className="cardlist">
           {memberDB.map((item) => (
               card(item)

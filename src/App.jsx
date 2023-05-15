@@ -12,6 +12,7 @@ import MainDescription from './components/MainDescription';
 import Sponsor from './components/Sponsor';
 import VerticalTabs from './components/FTab';
 import CardDisplay from './components/CardDisplay';
+import FeedBack from './components/Feed';
 const App = () => {
   AOS.init();
   return (
@@ -21,9 +22,11 @@ const App = () => {
       <Navbar/>
       <CardIntro/>
       <MainDescription/>
-      <Sponsor/>
       <VerticalTabs/>
       <CardDisplay/>
+      <FeedBack/>
+L     <Sponsor/>
+
     </body>
     
   );

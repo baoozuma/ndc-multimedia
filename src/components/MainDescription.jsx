@@ -16,7 +16,7 @@ class MainDescription extends Component {
         <>
         
         <div className='description' >
-        <h1 className='who'>ABOUT US</h1>
+        <h1 className='who'>Hi. We are<strong>&nbsp;Multimedia Club!</strong></h1>
         
         <div className="story">
         <section data-aos="fade-right" data-aos-once="true" data-aos-duration="500"data-aos-easing="ease-in-out">
