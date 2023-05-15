@@ -61,7 +61,7 @@ export const memberDB = [
         name: "Lê Trường Khải",
         avatar: images['khai.jpg'],
         address: "10T - @NguyenDinhChieu",
-        roles: ["Data Analyst & Economist"],
+        roles: ["Data Analyst & Sponsor"],
         description: "Astro core residency. Svelte and Vite core team member.",
         facebook: "https://www.facebook.com/profile.php?id=100064135344554",
         youtube: "none",

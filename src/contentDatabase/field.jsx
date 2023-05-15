@@ -1,7 +1,7 @@
 import images from '../components/importImages';
 export const field = [
     {
-        name: "DESIGN TEAM",
+        name: "Make everything colorful",
         class: "design",
         title: "We've made a multimedia webpage to showcase our skills and creativity with stunning visuals and engaging content that captivates your senses and leaves a lasting impression.",
         subtitle: "The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.",
@@ -10,7 +10,7 @@ export const field = [
         position: "right",
     },
     {
-        name: "FILMING TEAM",
+        name: "Capture every moment",
         class: "film",
         title: "We've made a multimedia webpage to showcase our skills and creativity with stunning visuals and engaging content that captivates your senses and leaves a lasting impression.",
         subtitle: "The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.",
@@ -19,7 +19,7 @@ export const field = [
         position: "left",
     },
     {
-        name: "MEDIA TEAM",
+        name: "Setup the friendly community",
         class: "media",
         title: "We've made a multimedia webpage to showcase our skills and creativity with stunning visuals and engaging content that captivates your senses and leaves a lasting impression.",
         subtitle: "The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.",
@@ -28,7 +28,7 @@ export const field = [
         position: "right",
     },
     {
-        name: "SOFTWARE TEAM",
+        name: "Build the system",
         class: "dev",
         title: "We've made a multimedia webpage to showcase our skills and creativity with stunning visuals and engaging content that captivates your senses and leaves a lasting impression.",
         subtitle: "The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.",
@@ -37,7 +37,7 @@ export const field = [
         position: "left",
     },
     {
-        name: "CAST TEAM",
+        name: "Ready...Action!",
         class: "cast",
         title: "We've made a multimedia webpage to showcase our skills and creativity with stunning visuals and engaging content that captivates your senses and leaves a lasting impression.",
         subtitle: "The development of Multimedia’ s website is guided by an international team, some of whom have chosen to be featured below.",

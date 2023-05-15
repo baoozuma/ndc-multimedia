@@ -12,8 +12,8 @@ export const Brand = [
     },
     {
         id: 3,
-        name: "Tailwind",
-        logo: images["tailwind.svg"],
+        name: "Material UI",
+        logo: images["material-ui.svg"],
     },
     {
         id: 4,

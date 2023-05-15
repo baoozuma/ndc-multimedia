@@ -7,7 +7,7 @@ class CardIntro extends Component {
             <div className="card intro">
                 <Link
                 activeClass="active"
-                to="design"
+                to="boxfield"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -17,7 +17,7 @@ class CardIntro extends Component {
                 </Link>
                 <Link 
                 activeClass="active"
-                to="film"
+                to="boxfield"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -27,7 +27,7 @@ class CardIntro extends Component {
                 </Link>
                 <Link
                 activeClass="active"
-                to="media"
+                to="boxfield"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -37,7 +37,7 @@ class CardIntro extends Component {
                 </Link>
                 <Link
                 activeClass="active"
-                to="dev"
+                to="boxfield"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -47,7 +47,7 @@ class CardIntro extends Component {
                 </Link>
                 <Link
                 activeClass="active"
-                to="cast"
+                to="boxfield"
                 spy={true}
                 smooth={true}
                 offset={-70}

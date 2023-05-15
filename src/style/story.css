@@ -10,16 +10,17 @@
   font-weight: 500;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   grid-area: story;
-  margin: 2vw;
+  
 }
 .story section {
-  margin: 2vw auto;
+  padding: 2vw;
   display: flex;
   width: 100% !important;
   gap: 4vw;
-  justify-content: center;
 }
+
 .border {
   position: relative;
   padding: 1.875rem;
@@ -52,8 +53,8 @@
   );
 }
 .story img {
-  height: 20vw;
-  width: 20vw;
+  height: 18vw;
+  width: 18vw;
   box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
   transition: all 0.3s;
 }
@@ -84,31 +85,24 @@
 }
 .story blockquote h3 {
   line-height: 3vw;
-  font-size: 3vw;
+  font-size: 2vw;
   margin: 0 auto;
 }
 .story blockquote p {
   margin: 0 auto;
-  font-size: 1.5vw;
-  line-height: 3vw;
+  font-size: 1.2vw;
+  line-height: 2vw;
 }
-.big {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1vw !important;
-  padding: 0;
-  margin-top: 5vw;
+section:nth-child(3) img {
+  
+  height: 22vw;
+  width: 22vw;
 }
-.big p {
-  text-align: center;
-  width: 80vw;
-}
-.big blockquote {
-  padding: 0;
-}
+
 @media screen and (max-width: 960px) {
+  .story {
+    width: 100%;
+  }
   .story section {
     margin: 4vw auto;
   }

@@ -12,6 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.0",
     "aos": "^2.3.4",
     "framer-motion": "^10.12.4",
     "node-sass": "^8.0.0",

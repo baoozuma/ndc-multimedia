@@ -88,14 +88,7 @@
   }
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1vw;
-  grid-area: slide;
-  padding: 0;
-}
+
 .about h2 {
   text-align: center;
   font-size: 3vw;
@@ -124,8 +117,9 @@
 }
 .page {
   
-  width: auto;
-  height: 18vw;  
+  width: 40vw;
+  height: auto;  
+  margin: 0 auto;
   border: 0.15vw solid rgb(171, 165, 165);
   transition: all 0.3s !important;
 }
@@ -135,9 +129,10 @@
   border: 0.15vw solid rgb(249, 202, 115);
 }
 .about .field {
-  margin: 0vw 3vw 3vw 3vw;
-  gap: 3vw;
+  margin: 0vw 4vw 3vw 4vw;
+  gap: 1vw;
   display: flex;
+  flex-direction: column !important;
   align-content: center;
   justify-content: center;
 }
@@ -150,10 +145,10 @@
 
 }
 .about blockquote p{
-
+  text-align: justify;
   margin: 0 auto;
-  font-size: 1.5vw;
-  line-height: 2.5vw;
+  font-size: 1.2vw;
+  line-height: 2vw;
   color: #b7b3b3;
   font-weight: 500;
 }
@@ -240,7 +235,7 @@
 
 /*Hover*/
 .cardmain:hover {
-  transform: scale(1.1);
+
   box-shadow: rgba(117, 124, 247, 0.538) 0px 0px 2vw;
   border: 0.15vw solid rgb(249, 202, 115);
   position: relative;
@@ -266,16 +261,53 @@
   border: 0.15vw solid rgb(249, 202, 115);
   transform: scale(1.1);
 }
+.cardmember {
+  grid-area: member;
+  display: flex;
+  flex-direction: column;
+}
+.cardmember h1 {
+  margin: 3vw 4vw;
+}
+.cardlist {
+  padding: 1vw 0.5vw 1vw 1vw;
+  
+  margin: 0 auto !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 40vw;
+  width: 92vw;
+  gap: 0.2vw;
+  border: 0.15vw solid white;
+}
+.cardlist::-webkit-scrollbar {
+    width: 0.5vw; /* Chiều rộng của thanh cuộn */
+  }
+  
+  .cardlist::-webkit-scrollbar-track {
+    background-color: transparent; /* Đặt màu nền của track là trong suốt */
+  }
+  
+  .cardlist::-webkit-scrollbar-thumb {
+    border-radius: 2vw;
+    background-color: #ffffff; /* Đặt màu cho thanh cuộn */
+  }
+  
+  .cardlist::-webkit-scrollbar-thumb:hover {
+    background-color: #989bef; /* Đặt màu khi hover vào thanh cuộn */
+  }
 
 @media screen and (max-width: 960px) {
   .memberintro {
     font-size: 7vw;
     padding: 2vw;
-    display: flex;
     justify-content: center;
     margin: 5vw auto;
   }
   .about {
+    height: 100vw;
     gap: 0.4vw;
   }
   .about h2 {
@@ -332,15 +364,16 @@
     transform: translateY(-5%);
   }
   .about blockquote {
-    gap: 1vw;
+    gap: 4vw;
     line-height: 3vw;
     flex-direction: column;
     display: flex;
     justify-content: center;
+    margin-bottom: 2vw;
   
   }
   .about blockquote p{
-  
+    text-align: center;
     margin: 0 auto;
     font-size: 2vw;
     line-height: 3vw;
@@ -351,9 +384,16 @@
     font-size: 2vw;
   }
   .page {
-    height: 20vw;
+    width: 70vw;
   }
   .about section {
-    padding: 0vw 2vw; 
+    width: 70vw;
+  }
+  .about .field {
+    gap: 2vw;
+  }
+  .cardlist {
+    height: 72vw;
+    gap: 1vw;
   }
 }
