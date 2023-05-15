@@ -250,7 +250,7 @@ h2.title {
   transition: all 0.3s;
   background-color: #000000;
   margin: 3vw 1vw;
-  height: 25vw;
+  height: 28vw;
 
 }
 .description h3 {
@@ -440,8 +440,10 @@ footer {
   margin: 0.8vw 0vw;
   transition: all 0.3s;
 }
-
-
+.tab img {
+  width: 3vw;
+  height: auto;
+}
 
 @media screen and (max-width: 960px) {
   h1 {
