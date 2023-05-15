@@ -59,6 +59,7 @@ body::-webkit-scrollbar-thumb:hover {
     "intro intro"
     "boxfield boxfield"
     "feedback feedback"
+    "gallery gallery"
     "member member"
     "sponsor sponsor"
     ;
@@ -329,16 +330,14 @@ footer {
 }
 .brand {
   border-radius: 2vw;
-  border: 0.15vw solid white;
+
   grid-area: sponsor;
   display: flex;
   flex-direction: column;
   margin: 4vw;
   transition: all 0.3s;
 }
-.brand:hover {
-  border: 0.15vw solid rgb(249, 202, 115);
-}
+
 .local {
   width: 90vw;
   margin: 0 auto;
@@ -522,6 +521,48 @@ footer {
 .statistic .amount {
   color: lightskyblue
 }
+.gallery {
+  grid-area: gallery;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  gap: 2vw;
+}
+.gallery h1 {
+  margin: 3vw;
+}
+.gallery_list {
+
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100%;
+  width: 80vw;
+}
+.gallery_list img {
+  transition: all 0.3s;
+}
+.gallery_list img:hover {
+  filter:brightness(70%);
+}
+.itembar {
+  color: white;
+}
+.gallery_list::-webkit-scrollbar {
+  width: 0.5vw; /* Chiều rộng của thanh cuộn */
+}
+
+.gallery_list::-webkit-scrollbar-track {
+  background-color: transparent; /* Đặt màu nền của track là trong suốt */
+}
+
+.gallery_list::-webkit-scrollbar-thumb {
+  border-radius: 2vw;
+  background-color: #ffffff; /* Đặt màu cho thanh cuộn */
+}
+
+.gallery_list::-webkit-scrollbar-thumb:hover {
+  background-color: #989bef; /* Đặt màu khi hover vào thanh cuộn */
+}
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 5vw !important;
@@ -542,6 +583,7 @@ footer {
       "des des"
       "intro intro"
       "boxfield boxfield"
+      "gallery gallery"
       "feedback feedback"
       "member member"
       "sponsor sponsor"

@@ -4,13 +4,15 @@ import images from "./importImages";
 import Slider from "react-slick";
 import { FeedClub } from "../contentDatabase/FeedbackAboutClub";
 import { ShortStatistic } from "../contentDatabase/ShortStatistic";
+
 const settings = {
 
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
+
 class FeedBack extends Component {
     render() {
         return (

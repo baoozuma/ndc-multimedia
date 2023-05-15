@@ -13,6 +13,7 @@ import Sponsor from './components/Sponsor';
 import VerticalTabs from './components/FTab';
 import CardDisplay from './components/CardDisplay';
 import FeedBack from './components/Feed';
+import Gallery from './components/Gallery';
 const App = () => {
   AOS.init();
   return (
@@ -24,8 +25,9 @@ const App = () => {
       <MainDescription/>
       <VerticalTabs/>
       <CardDisplay/>
+      <Gallery/>
       <FeedBack/>
-L     <Sponsor/>
+      <Sponsor/>
 
     </body>
     
