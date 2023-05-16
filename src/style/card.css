@@ -279,6 +279,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1vw;
+  width: 70vw;
+  height: 40vw;
+  overflow-y: scroll;
 
 }
 .cardlist::-webkit-scrollbar {
@@ -392,6 +395,8 @@
     gap: 2vw;
   }
   .cardlist {
+    height: 100vw;
+    width: 90vw;
     gap: 1vw;
   }
   .cardmember h1 {

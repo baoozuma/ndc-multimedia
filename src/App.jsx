@@ -14,6 +14,7 @@ import VerticalTabs from './components/FTab';
 import CardDisplay from './components/CardDisplay';
 import FeedBack from './components/Feed';
 import Gallery from './components/Gallery';
+import FooterClub from './components/FooterClub';
 const App = () => {
   AOS.init();
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Gallery/>
       <FeedBack/>
       <Sponsor/>
+      <FooterClub/>
 
     </body>
     

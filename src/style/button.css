@@ -59,37 +59,35 @@
 }
 .input-group {
     background-color: transparent !important;
-    height: 5vw;
+    height: 3vw;
     z-index: 1;
-    grid-area: input;
     display: flex;
-
-    justify-content: center;
-
+    margin-top: 1vw;
     background: rgb(0, 0, 0);
     color: white;
 
   }
   .input {
-    height: 4vw;
-    width: 30vw;
-    padding: 0 2vw;
+    height: 3vw;
+    width: 20vw;
+    padding: 0 1vw;
     color: #fff;
-    font-size: 1.5vw;
-    border: 1px solid #5e4dcd;
+    font-size: 1.2vw;
+    border: 0.15vw solid #ffffff;
+    border-right: none;
     border-radius: 1vw 0 0 1vw;
     background-color: transparent;
 
   }
   
   .button--submit {
-    height: 4vw;
-    padding: 1vw 2vw;
-    border: none;
+    height: 3vw;
+    padding: 0vw 2vw;
+    border: 0.15vw solid white;
     border-radius: 0 1vw 1vw 0;
     background-color: #5e4dcd;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
   }
@@ -97,7 +95,9 @@
   .button--submit:hover {
     background-color: #5e5dcd;
   }
-  
+  .button--submit:active {
+    border-color: #3898EC;
+  }
   .input:focus, .input:focus-visible {
     border-color: #3898EC;
     outline: none;
@@ -121,9 +121,16 @@
         justify-content: center;
     }
     .input-group {
+      height: 7vw;
 
-      scale: 2;
-      width: 65vw;
-      justify-content: center;
+    }
+    .input {
+      font-size: 2vw;
+      height: 7vw;
+      width: 40vw;
+    }
+    .button--submit {
+      font-size: 2vw;
+      height: 7vw;
     }
 }
