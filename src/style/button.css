@@ -73,7 +73,7 @@
     padding: 0 1vw;
     color: #fff;
     font-size: 1.2vw;
-    border: 0.15vw solid #ffffff;
+    border: 0.1vw solid #ffffff;
     border-right: none;
     border-radius: 1vw 0 0 1vw;
     background-color: transparent;
@@ -83,7 +83,7 @@
   .button--submit {
     height: 3vw;
     padding: 0vw 2vw;
-    border: 0.15vw solid white;
+    border: 0.1vw solid white;
     border-radius: 0 1vw 1vw 0;
     background-color: #5e4dcd;
     color: #fff;

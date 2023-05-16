@@ -125,38 +125,46 @@ h1 strong {
   transform: scale(1.2);
 }
 
-header {
-  float: right;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 100%;
-  align-items: center;
-  grid-area: header;
-}
+
 .navbar {
-  margin-right: 3vw;
-  height: 2vw;
+  justify-content: flex-end;
+  grid-area: nav;
   float: right;
   display: flex;
   z-index: 100;
   gap: 5vw;
+  margin: auto 4vw;
+}
+.dynamic_nav {
+  padding-left: 2vw;
+  background-color: rgba(41, 17, 223, 0.15);  
+  backdrop-filter: blur(4px);
+  display: grid;
+  grid-template-areas: 
+  "logo1 nav";
+  width: 100%;
+  position: fixed;
+  z-index: 1000000000;
+}
+.empty {
+  height: 5rem;
+  grid-area: header;
 }
 .logo {
   z-index: 100;
-  margin: 2vw 0 0 5vw;
-  width: 4vw;
-  scale: 2.5;
-  grid-area: logo;
+  width: 7vw;
+
+  grid-area: logo1;
   transition: all 0.3s;
 }
 .logo:hover {
   transform: scale(1.1);
 }
-.navbar button {
+.navbar .nav-item {
+  text-decoration: none;
   border: none;
   color: white;
-
-  height: 4vw;
+  margin: auto 0;
   transition: all 0.3s;
   font-weight: 400;
   cursor: pointer;
@@ -164,7 +172,7 @@ header {
 
   vertical-align: flex-start;
 }
-.navbar button:hover {
+.navbar .nav-item:hover {
   color: rgba(233, 231, 231, 0.397);
   background-color: none;
 }
@@ -179,6 +187,24 @@ h2.title {
   left: 0%;
 }
 @media screen and (max-width: 960px) {
+  .dynamic_nav {
+
+    height: 10vw;
+    gap: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .empty {
+    height: 5vw;
+  }
+  
+  .dynamic_nav .logo {
+    width: 10vw;
+    margin: 0;
+  }
+  
+
 }
 .container {
   height: 30vw;
@@ -507,10 +533,9 @@ h2.title {
   justify-content: center;
   margin: auto 0;
   margin-left: 10vw;
-  width: 40vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 6vw;
+  gap: 5vw;
 }
 .statistic p {
   
@@ -600,10 +625,11 @@ footer {
   margin-top: 2vw;
 }
 .contact .logo {
-  width: 2.5vw;
+  scale: 1.5;
+  width: 4vw;
   height: auto;
   margin: 0;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 .credit {
   grid-area: credit;
@@ -643,6 +669,64 @@ footer {
   height: auto;
   filter: invert(1);
 }
+.apply {
+  width: 100vw !important;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.apply h1 {
+  margin: 5vw ;
+  text-align: center;
+  width: 100;
+}
+.space {
+  height: 5vw;
+}
+.joblist {
+  justify-content: center;
+  margin: 2vw 0vw;
+  gap: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.jobcard {
+  background: #342E2E;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  height: 37vw;
+  width: 22vw;
+  transition: all 0.3s;
+}
+.jobcard:hover {
+  transform: scale(1.05);
+}
+.jobcard img {
+  border: 2px solid #000000;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+  height: 12vw !important; 
+  width: 22vw !important;
+  object-fit: cover;
+}
+.jobcard h2 {
+  margin: 0vw 2vw;
+  color: white;
+}
+.jobcard p {
+  text-align: justify;
+  font-weight: 300;
+  margin: 0vw 1.5vw;
+  color: white;
+}
+.jobcard a {
+  color: rgb(4, 141, 240);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 5vw !important;
@@ -677,8 +761,8 @@ footer {
     width: auto;
     align-items: center;
   }
-  .navbar button {
-    font-size: 3vw;
+  .navbar .nav-item {
+    font-size: 2.2vw;
   }
   header {
     display: flex;
@@ -836,11 +920,11 @@ footer {
   .feedback {
     padding: 5vw 2vw;
     flex-direction: column;
-    height: 70vw; 
+    height: 75vw; 
   }
   .people {
     line-height: 3vw;
-    top: 0;
+ 
     margin: 0 auto;
     width: 90%;
 
@@ -908,6 +992,9 @@ footer {
   }
   .credit h3 {
     font-size: 2vw;
+  }
+  .description .cardspan {
+    height: 70vw;
   }
 
 }
