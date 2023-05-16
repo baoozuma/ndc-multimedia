@@ -887,7 +887,14 @@ footer {
   .credit {
     margin: 0 auto;
     justify-content: center;
-    gap: 20vw;
+    gap: 10vw;
+  }
+  .bottom_nav {
+    gap: 10vw;
+  }
+  .bottom_nav img {
+    width: 5vw;
+    height: auto;
   }
 
 }
