@@ -16,7 +16,7 @@ const settings = {
 class FeedBack extends Component {
     render() {
         return (
-            <div className="feedback">
+            <div className="feedback" data-aos="fade-left"  data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
                 <Slider {...settings} className="people">
                     {FeedClub.map((item) => (
                         <section className='person'>

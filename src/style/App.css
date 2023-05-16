@@ -257,7 +257,10 @@ h2.title {
   background-color: #000000;
   margin: 3vw 1vw;
   height: 28vw;
-
+  transition: all 0.3s;
+}
+.description .cardspan:hover {
+  transform: scale(1.05) !important;
 }
 .description h3 {
   font-family: Montserrat;
@@ -866,6 +869,7 @@ footer {
     font-size: 2vw;
   }
   .gallery_list {
+    width: 95vw;
     height: 100vw;
   }
   footer {

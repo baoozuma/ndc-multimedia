@@ -33,7 +33,7 @@ class MainDescription extends Component {
           </blockquote>
           <div><img className='boy' src={stories[1].image} ></img></div>
         </section>
-        <section className='big'data-aos="fade-up"  data-aos-once="true" data-aos-duration="800"  data-aos-easing="ease-in-out">
+        <section className='big'data-aos="fade-right"  data-aos-once="true" data-aos-duration="800"  data-aos-easing="ease-in-out">
         <img className='stand' src={stories[2].image} ></img>
           <blockquote>
             <h3>{stories[2].title}</h3>
@@ -55,11 +55,11 @@ class MainDescription extends Component {
             </span>
           ))}
           </div>*/}
-          <div className="article">
+          <div className="article" data-aos="fade-right"  data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
             {aboutDB.map((item) => (
 
             
-            <Card sx={{ maxWidth: 345 }} className="cardspan">
+            <Card sx={{ maxWidth: 345 }} className="cardspan" >
               <CardActionArea>
                 <CardMedia
                   component="img"

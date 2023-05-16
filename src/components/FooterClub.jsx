@@ -6,8 +6,8 @@ import { SocialIcon } from "../contentDatabase/SocialMedia";
 class FooterClub extends Component {
     render() {
         return (
-            <footer>
-                <div className="contact">
+            <footer data-aos="fade-right"  data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
+                <div className="contact" >
                     <img className="logo" src={images['logo2.png']}>
                     </img>
                     <h2 className="contact_title">Keep up to date</h2>
