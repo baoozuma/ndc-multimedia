@@ -5,6 +5,7 @@ import '../style/App.css';
 import '../style/button.css';
 import '../style/card.css';
 import'../style/story.css';
+import '../style/Apply.css';
 import {Job} from '../contentDatabase/Job';
 import {Routes, Route, Link} from 'react-router-dom';
 import Review from "./Review";
