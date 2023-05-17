@@ -788,6 +788,7 @@ footer {
   object-fit: cover;
 }
 .applybutton {
+  font-family: "Montserrat" !important;
   font-size: 1.5vw !important;
   height: 3vw;
   width: 18vw;

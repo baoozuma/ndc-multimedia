@@ -36,6 +36,12 @@ const Review = (props) => {
                                 <li key={item}><p>{item}</p></li>
                         ))}
                     </ul>
+                    <h1>Yêu cầu phẩm chât</h1>
+                    <ul>
+                        {jobReview.skill.map((item) => (
+                                <li key={item}><p>{item}</p></li>
+                        ))}
+                    </ul>
             </section>
             <Slider {...settings} className="slide">
                 {jobReview.pictures.map((item) => (
