@@ -139,7 +139,7 @@ h1 strong {
 .dynamic_nav {
   padding-left: 2vw;
   background-color: rgba(77, 55, 245, 0.147);  
-  backdrop-filter: blur(4px);
+
   display: grid;
   grid-template-areas: 
   "logo1 nav";
@@ -186,6 +186,7 @@ h2.title {
   line-height: 2.5vw;
   font-size: 1.8vw;
   left: 0%;
+  text-align: start !important;
 }
 @media screen and (max-width: 960px) {
   .dynamic_nav {
