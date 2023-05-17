@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../style/App.css';
-import '../style/button.css';
-import '../style/card.css';
-import'../style/story.css';
+
 import {Job} from '../contentDatabase/Job';
-import {Routes, Route, Link} from 'react-router-dom';
 import Slider from "react-slick";
 import Button from '@mui/material/Button';
 const settings = {

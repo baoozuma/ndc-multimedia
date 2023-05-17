@@ -12,7 +12,7 @@ class Navbar extends Component {
               <Link to="/ndc-multimedia/" className="nav-item">TRANG CHỦ</Link>
               <Link to= "/ndc-multimedia/apply" className="nav-item">TUYỂN DỤNG</Link>
               <Link className="nav-item">BÀI VIẾT</Link>
-              <Link className="nav-item">LIÊN LẠC</Link>
+              <Link to="/ndc-multimedia/login"className="nav-item">ĐĂNG NHẬP</Link>
             </nav>
             </div>
         )

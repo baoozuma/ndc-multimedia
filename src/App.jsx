@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Apply from './pages/Apply';
 import Review from './pages/Review';
+import Login from './pages/Login';
 import {Routes, Route} from 'react-router-dom';
 import {Job} from './contentDatabase/Job';
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
         {Job.map((item) => (
               <Route path={item.link} element={<Review id={item.id}/>}></Route>
         ))}
+        <Route path="/ndc-multimedia/login" element={<Login/>} />
+        
       </Routes>
     </body>
     
