@@ -18,7 +18,7 @@ const Apply = () => {
             <h1>CƠ HỘI LÀM VIỆC VỚI <strong>CHÚNG TÔI - MULTIMEDIA</strong></h1>
             <section className="joblist">
                 {Job.map((item) => (
-                    <div className="jobcard">
+                    <div className="jobcard" data-aos="fade-up" data-aos-duration="1000">
                         <img src={item.image}></img>
                         <h2>{item.title}</h2>
                         <p><strong>Số lượng:&nbsp;</strong>{item.amount}</p>

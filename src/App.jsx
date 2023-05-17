@@ -13,11 +13,13 @@ import Review from './pages/Review';
 import Login from './pages/Login';
 import {Routes, Route} from 'react-router-dom';
 import {Job} from './contentDatabase/Job';
+import { motion } from 'framer-motion';
 const App = () => {
   AOS.init();
   return (
     <body className='body'>
       <Navbar/>
+
       <Routes>
         <Route path="/ndc-multimedia/" element={<Home/>} />
         <Route path="/ndc-multimedia/apply" element={<Apply/>} />
@@ -27,6 +29,7 @@ const App = () => {
         <Route path="/ndc-multimedia/login" element={<Login/>} />
         
       </Routes>
+
     </body>
     
   );

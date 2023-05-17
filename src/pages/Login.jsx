@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 const Login = () => {
     
     return (
-        <div className="login">
-        <div className="form-container">
+        <div className="login" >
+        <div className="form-container" data-aos="fade-up" data-aos-duration="1000">
             <p className="title">Login</p>
             <form className="form">
                 <div className="in-group">

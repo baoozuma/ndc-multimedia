@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 class CardIntro extends Component {
     render() {
         return (
-            <div className="card intro">
+            <div className="card intro" data-aos="fade-up" data-aos-duration="1000">
                 <Link
                 activeClass="active"
                 to="boxfield"

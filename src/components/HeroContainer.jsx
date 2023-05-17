@@ -7,7 +7,7 @@ class HeroContainer extends Component {
     return(
         <>
         <div className="background"></div>
-        <div className="container">
+        <div className="container" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="title sub" id="typed-text">HI THERE, IT'S <strong>MULTIMEDIA CLUB</strong><br/>Are you a creative spirit looking for a fun way to express yourself? Let's get started!</h2>
             <div className="banner">
             <motion.div
@@ -54,7 +54,7 @@ class HeroContainer extends Component {
         </div>
             
         </div>
-        <div className="startbutton">
+        <div className="startbutton" data-aos="fade-up" data-aos-duration="1000">
         <Link
         activeClass="active"
         to="description"
