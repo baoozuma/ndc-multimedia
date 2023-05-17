@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  color: white;
 }
 .background {
 
@@ -722,10 +723,75 @@ footer {
   color: white;
 }
 .jobcard a {
+  font-weight: bold !important;
   color: rgb(4, 141, 240);
   font-weight: 500;
   text-align: center;
   text-decoration: none;
+}
+.jobreview {
+  padding: 5vw;
+  padding-top: 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  width: 100%;
+}
+.jobtitle {
+  gap: 2vw;
+  display: flex;
+  width: 80vw;
+}
+.jobtitle img {
+  box-shadow: 7px 7px 4px rgba(156, 152, 152, 0.25);
+  width: 20vw;
+  height: 10vw;
+  object-fit: cover;
+}
+.head {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.head h1 {
+  font-weight: 600;
+}
+.head h2 {
+  color: rgb(185, 177, 177);
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.review h1 {
+  font-size: 2vw !important;
+  color: lightyellow;
+}
+.review p {
+  color: white;
+  line-height: 2vw;
+  margin-left: 2vw;
+}
+.review ul {
+  margin-left: 3vw;
+}
+.slide {
+  margin: 0 auto;
+  width: 45vw;
+}
+.reviewpicture {
+  
+  width: 40vw;
+  height: 25vw;
+  object-fit: cover;
+}
+.applybutton {
+  font-size: 1.5vw !important;
+  height: 3vw;
+  width: 18vw;
+  margin: 0 auto !important;
 }
 @media screen and (max-width: 960px) {
   h1 {
