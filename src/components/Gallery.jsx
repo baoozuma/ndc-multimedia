@@ -35,7 +35,7 @@ class Gallery extends Component {
   render() {
     return (
       <div className="gallery" data-aos="fade-right"  data-aos-once="true" data-aos-duration="500"  data-aos-easing="ease-in-out">
-        <h1>Gallery Display</h1>
+        <h1><strong>Artistic Showcase:</strong> The Gallery Display</h1>
         <Box sx={{ overflowY: 'scroll' }} className='gallery_list'>
           <ImageList variant="masonry" cols={this.checkWidth()} gap={7}>
             {itemData.map((item) => (

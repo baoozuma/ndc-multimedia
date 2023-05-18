@@ -16,7 +16,7 @@ class MainDescription extends Component {
         <>
         
         <div className='description' >
-        <h1 className='who'>Hi. We are<strong>&nbsp;Multimedia Club!</strong></h1>
+        <h1 className='who'>Xin chào, chúng tôi là<strong>&nbsp;Multimedia!</strong></h1>
         
         <div className="story">
         <section data-aos="fade-right" data-aos-once="true" data-aos-duration="500"data-aos-easing="ease-in-out">
@@ -31,7 +31,7 @@ class MainDescription extends Component {
             <h3>{stories[1].title}</h3>
             <p>{stories[1].description}</p>
           </blockquote>
-          <div><img className='boy' src={stories[1].image} ></img></div>
+          <img className='boy' src={stories[1].image} ></img>
         </section>
         <section className='big'data-aos="fade-right"  data-aos-once="true" data-aos-duration="800"  data-aos-easing="ease-in-out">
         <img className='stand' src={stories[2].image} ></img>

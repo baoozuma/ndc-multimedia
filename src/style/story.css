@@ -54,6 +54,7 @@
   );
 }
 .story img {
+  margin: auto 0;
   height: 18vw;
   width: 18vw;
   box-shadow: rgba(0, 0, 0, 0.538) 0px 0px 3vw;
@@ -85,9 +86,10 @@
   flex-direction: column;
 }
 .story blockquote h3 {
-  line-height: 3vw;
+  line-height: 4vw;
   font-size: 2vw;
   margin: 0 auto;
+  text-align: center;
 }
 .story blockquote p {
   margin: 0 auto;
@@ -99,7 +101,11 @@ section:nth-child(3) img {
   height: 22vw;
   width: 22vw;
 }
-
+section:nth-child(2) img {
+  
+  height: 20vw;
+  width: 20vw;
+}
 @media screen and (max-width: 960px) {
   .story {
     width: 100%;

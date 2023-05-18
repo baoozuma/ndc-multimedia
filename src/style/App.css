@@ -144,7 +144,7 @@ h1 strong {
   grid-template-areas: 
   "logo1 nav";
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 1000000000;
 }
 .empty {
@@ -259,11 +259,12 @@ h2.title {
     "img img img";
 }
 .description p {
+  margin-bottom: 4vw;
   color: #b7b3b3;
   font-weight: 500;
 }
 .description h4 {
-  line-height: 4vw;
+  line-height: 3vw;
   font-weight: 700;
   font-size: 1.5vw;
 
@@ -282,12 +283,15 @@ h2.title {
 .description .cardspan {
   border: 0.15vw solid #b7b3b3;
   transition: all 0.3s;
-  background-color: #000000;
+  background-color: #00000042;
   margin: 3vw 1vw;
   height: 28vw;
+  width: 20vw;
   transition: all 0.3s;
+  padding-bottom: 0;
 }
 .description .cardspan:hover {
+  filter: none !important;
   transform: scale(1.05) !important;
 }
 .description h3 {
@@ -296,7 +300,7 @@ h2.title {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1vw;
+  padding: 2vw;
   font-size: 2vw;
 }
 
@@ -443,7 +447,7 @@ h2.title {
   margin: 1vw 0vw;
 }
 .boxfield h2 strong {
-  color: rgb(138, 138, 238);
+  color: rgb(4, 141, 240);
 }
 .tabtitle {
   
@@ -854,7 +858,7 @@ footer {
     width: 100%;
   }
   .boxfield h2 {
-    font-size: 5vw !important;
+    font-size: 4vw !important;
   }
   .boxfield p {
     font-size: 3vw;
@@ -890,9 +894,11 @@ footer {
   .person p strong {
     font-size: 2vw;
   }
-  .statistic {
+  .statistic { 
     flex-wrap: nowrap;
     margin: 0 auto;
+    margin-left: 3vw;
+ 
     width: 100%;
   }
   .statistic p {
@@ -900,7 +906,7 @@ footer {
   }
   .gallery_list {
     width: 95vw;
-    height: 100vw;
+    height: 120vw;
   }
   footer {
     display: flex;  

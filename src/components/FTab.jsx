@@ -79,8 +79,8 @@ export default function VerticalTabs() {
   return (
     <Box className='boxfield'>
       <Typography variant="h4" className="tabtitle">
-        <h2>Every component you need is <strong>ready for production</strong></h2>
-        <p>Build at an accelerated pace without sacrificing flexibility or control.</p>
+        <h2>Những kỉ niệm tuyệt vời của bạn đã được<strong>&nbsp;đưa vào khung hình</strong></h2>
+        <p>Chúng tôi là nghệ nhân của trí tưởng tượng, biến những ý tưởng và giấc mơ thành hiện thực lãng mạn.</p>
         </Typography>
       <Tabs
       className='tabfield'
@@ -91,25 +91,14 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab className="tab" label={<><img src={images['designicon.png']}/>DESIGN TEAM</>} {...a11yProps(0)} />
-        <Tab className="tab" label={<><img src={images['filmicon.png']}/>FILMING TEAM</>} {...a11yProps(1)} />
-        <Tab className="tab" label={<><img src={images['mediaicon.png']}/>MEDIA TEAM</>} {...a11yProps(2)} />
-        <Tab className="tab" label={<><img src={images['codeicon.png']}/>SOFTWARE TEAM</>} {...a11yProps(3)} />
-        <Tab className="tab" label={<><img src={images['casticon.png']}/>CASTING TEAM</>} {...a11yProps(4)} />
+        <Tab className="tab" label={<><img src={images['designicon.png']}/>THIẾT KẾ</>} {...a11yProps(0)} />
+        <Tab className="tab" label={<><img src={images['filmicon.png']}/>DỰNG PHIM</>} {...a11yProps(1)} />
+        <Tab className="tab" label={<><img src={images['mediaicon.png']}/>TRUYỀN THÔNG</>} {...a11yProps(2)} />
+        <Tab className="tab" label={<><img src={images['codeicon.png']}/>LẬP TRÌNH</>} {...a11yProps(3)} />
+        <Tab className="tab" label={<><img src={images['casticon.png']}/>ĐIỆN ẢNH</>} {...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0} className='about' id='panel-0'>
-      <section className="field" >
-        
-        <blockquote data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="200">
-          <h2 className={field[0].class}>{field[0].name}</h2>
-          <p>{field[0].title}</p>                    
-          </blockquote>
-          <img className="page" src={images['design (1).png']}  data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" />
-          <img className="page" src={images['design (2).png']}  data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out" />
-          <img className="page" src={images['design (3).png']}  data-aos="fade-left" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-out"/>
-
-
-      </section>
+        {TabField(0)}
       </TabPanel>
       <TabPanel value={value} index={1} className='about' id='panel-1'>
         {TabField(1)}

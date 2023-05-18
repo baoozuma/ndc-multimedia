@@ -16,29 +16,31 @@
   .joblist {
     justify-content: center;
     margin: 2vw 4vw;
-    gap: 0.5vw;
+    gap: 2vw;
     display: flex;
     flex-wrap: wrap;
   }
   .jobcard {
-    background: #342E2E;
+    background: #1302324f;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     gap: 1.2vw;
-    height: 34vw;
-    width: 22vw;
+    height: 32vw;
+    width: 27vw;
     transition: all 0.3s;
+    border: 0.15vw solid rgb(171, 165, 165);
   }
   .jobcard:hover {
     transform: scale(1.01);
   }
   .jobcard img {
-    border: 2px solid #000000;
+    border: 0.15vw solid #000000;
     box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
-    height: 12vw !important; 
-    width: 22vw !important;
+    height: 14vw !important; 
+    width: 100% !important;
     object-fit: cover;
+    
   }
   .jobcard h2 {
     margin: 0vw 2vw;
@@ -51,14 +53,19 @@
     margin: 0vw 2vw;
     color: white;
     font-size: 1vw;
+    line-height: 1.5vw;
   }
   .jobcard a {
-    font-weight: bold !important;
-    color: rgb(4, 141, 240);
+    font-weight: 500 !important;
+    color: rgb(224, 246, 167);
     font-weight: 500;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    transition: all 0.3s;
+  }
+  .jobcard a:hover {
+    color: yellow;
   }
   .jobreview {
     padding: 5vw;
@@ -74,9 +81,9 @@
     width: 80vw;
   }
   .jobtitle img {
-    box-shadow: 7px 7px 4px rgba(156, 152, 152, 0.25);
-    width: 20vw;
-    height: 10vw;
+    box-shadow: 0.7vw 0.7vw 0.5vw rgba(156, 152, 152, 0.25);
+    width: 30vw;
+    height: 15vw;
     object-fit: cover;
   }
   .head {
@@ -86,12 +93,13 @@
     gap: 1vw;
   }
   .head h1 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 3vw !important;
   }
   .head h2 {
-    color: rgb(185, 177, 177);
+    color: rgb(183, 185, 177);
     font-size: 2vw;
+    font-weight: 400;
   }
   .review {
     display: flex;
@@ -100,7 +108,8 @@
   }
   .review h1 {
     font-size: 2vw !important;
-    color: lightyellow;
+    color: rgb(233, 233, 173);
+    font-weight: 400;
   }
   .review p {
     font-size: 1.2vw;
@@ -127,6 +136,7 @@
     height: 3vw;
     width: 18vw;
     margin: 0 auto !important;
+    font-weight: 300 !important;
   }
 @media screen and (max-width: 960px) {
       .space {

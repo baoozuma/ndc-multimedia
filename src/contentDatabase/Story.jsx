@@ -2,23 +2,23 @@ import images from '../components/importImages';
 export const stories = [
     {
         id: "camera",
-        title: "WE ARE A COMMUNITY",
+        title: "NƠI SÁNG TẠO PHONG CÁCH ĐIỆN ẢNH",
         image: images["storycamera.jpg"],
-        description: "Vestibulum orci sapien, dignissim vitae felis quis, bibendum venenatis ante. Suspendisse accumsan pulvinar laoreet. Nam cursus, diam ac consequat commodo, augue nisl condimentum ante, ac fringilla tellus nisl id velit. In in lacinia massa. ",
+        description: "Khám phá thế giới điện ảnh qua bài viết sâu sắc, đánh giá phim chính xác và hình ảnh/video tuyệt đẹp. Tham gia ngay, nơi sáng tạo phong cách điện ảnh và khám phá bước tiến mới trong ngành nghệ thuật tuyệt vời.",
 
     },
     {
         id: "different",
-        title: "CREATE THE DIFFERENCE",
+        title: "TẠO RA NHỮNG SỰ ĐỘT PHÁ",
         image: images["storydifference.jpg"],
-        description: "Vestibulum orci sapien, dignissim vitae felis quis, bibendum venenatis ante. Suspendisse accumsan pulvinar laoreet. Nam cursus, diam ac consequat commodo, augue nisl condimentum ante, ac fringilla tellus nisl id velit. In in lacinia massa. ",
+        description: "CLB chúng tôi không chỉ chia sẻ thông tin về điện ảnh, mà còn là nền tảng thăng hoa cho nghệ sĩ đam mê sáng tạo. Chúng tôi mở rộng tầm nhìn, khám phá xu hướng mới, câu chuyện cảm hứng và kỹ thuật đột phá trong ngành điện ảnh.",
 
     },
     {
         id: "tell",
-        title: "WE TELL OUR STORIES",
+        title: "KHÁM PHÁ VÀ SÁNG TẠO",
         image: images["standing.png"],
-        description: "Vestibulum orci sapien, dignissim vitae felis quis, bibendum venenatis ante. Suspendisse accumsan pulvinar laoreet. Nam cursus, diam ac consequat commodo, augue nisl condimentum ante, ac fringilla tellus nisl id velit. In in lacinia massa. ",
+        description: " Từ việc sản xuất các bộ phim ngắn, phóng sự, đến thực hiện các dự án quảng cáo và video âm nhạc, chúng tôi luôn đặt mục tiêu cao và sẵn sàng vượt qua giới hạn để tạo ra những tác phẩm đậm chất nghệ thuật và thể hiện tầm nhìn độc đáo của mỗi thành viên.",
 
     },
 ]

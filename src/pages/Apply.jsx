@@ -16,15 +16,14 @@ const Apply = () => {
         
             <div className="space"></div>
             <h1>CƠ HỘI LÀM VIỆC VỚI <strong>CHÚNG TÔI - MULTIMEDIA</strong></h1>
-            <section className="joblist">
+            <section className="joblist" data-aos="fade-up" data-aos-duration="1000">
                 {Job.map((item) => (
-                    <div className="jobcard" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="jobcard" >
                         <img src={item.image}></img>
                         <h2>{item.title}</h2>
-                        <p><strong>Số lượng:&nbsp;</strong>{item.amount}</p>
+                        <p><strong>Lĩnh vực:&nbsp;</strong>{item.field}</p>
                         <p><strong>Mô tả công việc:&nbsp;</strong>{item.description}</p>
-                        <p><strong>Yêu cầu cần thiết:&nbsp;</strong>{item.require}</p>
-                        <Link to={item.link}>Ứng tuyển tại đây</Link>
+                        <Link to={item.link}>ỨNG TUYỂN TẠI ĐÂY</Link>
 
                     </div>
                 ))}

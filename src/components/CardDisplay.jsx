@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {memberDB} from "../contentDatabase/Member";
+import {memberDB} from "../contentDatabase/member";
 import images from "./importImages";
 
 const card = (index) => {
@@ -61,7 +61,7 @@ class CardDisplay extends Component {
     return(
       <div className="cardmember">
 
-        <h1>See all of our<strong>&nbsp;core member</strong></h1>
+        <h1>MEET OUR<strong>&nbsp;CORE TEAM</strong></h1>
         <div className="cardlist">
           {memberDB.map((item) => (
               card(item)
