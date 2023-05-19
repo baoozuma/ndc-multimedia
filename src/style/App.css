@@ -563,6 +563,7 @@ h2.title {
   gap: 2vw;
 }
 .MuiImageListItemBar-title {
+  font-weight: bold;
   font-size: 1vw;
 }
 .MuiImageListItemBar-subtitle {
@@ -887,7 +888,7 @@ footer {
     margin: 4vw;
   }
   .feedback {
-    padding: 5vw 0vw;
+    padding: 5vw 3vw;
     flex-direction: column;
     height: 78vw; 
   }
@@ -974,7 +975,8 @@ footer {
     font-size: 2vw !important;
   }
   .MuiImageListItemBar-subtitle {
-    font-size: 1vw;
+    
+    font-size: 2vw !important; 
     height: 3vw;
   }
 
