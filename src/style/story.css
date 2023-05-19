@@ -96,18 +96,18 @@
   font-size: 1.2vw;
   line-height: 2vw;
 }
-section:nth-child(3) img {
+.story section:nth-child(3) img {
   
   height: 22vw;
   width: 22vw;
 }
-section:nth-child(2) img {
+.story section:nth-child(2) img {
   
   height: 20vw;
   width: 20vw;
 }
 @media screen and (max-width: 960px) {
-  section:nth-child(1) img {
+  .story section:nth-child(1) img {
   
     height: 20vw;
     width: 20vw;
