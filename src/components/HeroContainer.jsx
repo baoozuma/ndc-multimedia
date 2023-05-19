@@ -67,7 +67,6 @@ class HeroContainer extends Component {
         to="contact"
         spy={true}
         smooth={true}
-        offset={-70}
         duration={2000}><button className="btn see">CÔNG VIỆC</button></Link>
     </div>
     </>
