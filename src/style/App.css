@@ -980,7 +980,9 @@ footer {
     height: 3vw;
   }
 
-
+.itembar {
+  padding: 0 !important
+}
 }
 @media screen and (max-aspect-ratio: 0.5) {
   .background {

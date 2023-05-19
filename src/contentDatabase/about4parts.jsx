@@ -22,6 +22,6 @@ export const aboutDB = [
         id: 4,
         image: images['frontend.jpg'],
         title: "TIỀM NĂNG",
-        description: " Với đội ngũ thành viên đam mê và tài năng, chúng tôi đã xây dựng một nền tảng vững chắc để khám phá và thể hiện sự sáng tạo trong lĩnh vực phim ảnh.",
+        description: " Với đội ngũ đam mê và tài năng, chúng tôi đã xây dựng một nền tảng vững chắc để khám phá và thể hiện sự sáng tạo trong lĩnh vực phim ảnh.",
     },
 ]
