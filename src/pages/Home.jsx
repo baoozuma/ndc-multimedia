@@ -5,8 +5,6 @@ import '../style/card.css';
 import'../style/story.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from '../components/Navbar';
-import CardIntro from '../components/IntroCard';
 import HeroContainer from '../components/HeroContainer';
 import MainDescription from '../components/MainDescription';
 import Sponsor from '../components/Sponsor';
@@ -22,7 +20,7 @@ const Home = () => {
     <>
       <div className="empty"></div>
       <HeroContainer/>
-      <CardIntro/>
+      
       <MainDescription/>
       <VerticalTabs/>
       <CardDisplay/>

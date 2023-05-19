@@ -10,7 +10,7 @@
 }
 .background {
 
-  height: 105%;
+  height: 100%;
   width: 100%;
   background-size: cover;
   box-shadow: 
@@ -25,7 +25,6 @@
 body {
   background: #071d1a;
   width: 100%;
-  height: 100% !important;
   overflow: hidden;
   overflow-y: scroll;
   
@@ -51,12 +50,8 @@ body::-webkit-scrollbar-thumb:hover {
   place-content: center;
   display: grid;
   width: 100% !important;
-
   grid-template-areas:
-    "logo header"
-    "container card"
-    "container card"
-    "button card"
+    "hero hero"
     "des des"
     "intro intro"
     "boxfield boxfield"
@@ -65,9 +60,24 @@ body::-webkit-scrollbar-thumb:hover {
     "member member"
     "sponsor sponsor"
     "footer footer"
-    ;
+    "footer footer";
   grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto 0fr;
   max-width: 100vw;
+}
+.hero {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  grid-area: hero;
+  display: grid;
+  grid-template-areas: 
+    "logo header"
+    "container card"
+    "container card"
+    "button card";
+    grid-template-columns: 2fr 2fr;
+  
 }
 h1 {
   z-index: 1;
@@ -189,6 +199,7 @@ h2.title {
   font-size: 1.8vw;
   left: 0%;
   text-align: start !important;
+  margin-top: 3vw;
 }
 @media screen and (max-width: 960px) {
   .dynamic_nav {
@@ -249,7 +260,7 @@ h2.title {
   padding: 5vw;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  
+  grid-area: des;
   display: grid;
   gap: 0.5vw;
   grid-template-columns: 1.5fr 1fr 1fr;
@@ -308,11 +319,10 @@ h2.title {
 
 .who {
   color: #ffffff;
-
+  grid-area: who;
   font-weight: bolder;
   font-size: 4vw;
   padding-right: 0vw;
-  margin: 10vw 4vw 0vw 4vw;
 }
 .bgp {
   transition: all 0.3s;
@@ -605,14 +615,14 @@ h2.title {
 .gallery_list::-webkit-scrollbar-thumb:hover {
   background-color: #989bef; /* Đặt màu khi hover vào thanh cuộn */
 }
-footer {
+.footer {
   padding: 7vw 7vw;
-  height: 30vw; 
+  height: 32vw; 
   margin-top: 10vw;
   background-color: rgb(49, 48, 48);
   grid-area: footer;
   display: grid;
-
+  margin-bottom: -6vw;
   grid-template-areas: 
   "contact credit"
   "contact bot";
@@ -686,11 +696,7 @@ footer {
   height: auto;
   filter: invert(1);
 }
-.desc {
-  display: flex;
-  grid-area: des;
-  flex-direction: column;
-}
+
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 5vw !important;
@@ -702,12 +708,7 @@ footer {
     place-content: center;
     align-content: center;
     grid-template-areas:
-      "logo logo"
-      "header header"
-      "container container"
-      "card card"
-      "button button"
-      "input input"
+      "hero hero"
       "des des"
       "intro intro"
       "boxfield boxfield"
@@ -718,6 +719,12 @@ footer {
       "footer footer"
       
   }
+  .hero {
+    grid-template-areas: 
+    "container container"
+    "card card"
+    "button button";
+  }
   h2.title {
     line-height: 5vw;
     font-size: 4vw;
@@ -727,10 +734,6 @@ footer {
   }
   .navbar .nav-item {
     font-size: 2.2vw;
-  }
-  header {
-    display: flex;
-    justify-content: center;
   }
   .container {
     display: flex;
@@ -762,16 +765,8 @@ footer {
   .smartphone {
     transform: rotate(20deg);
   }
-
-  .table-item {
-    font-size: 4vw;
-    line-height: 6vw;
-  }
   .navbar {
     margin-top: 3vw;
-  }
-  .table {
-    margin: 2vw;
   }
   .description {
     height: 100% !important;
@@ -782,18 +777,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 4vw;
-  }
-  .imgblock {
-    
-		width: auto !important;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .imgblock .img {
-    height: 20vw;
-  }
-  .img7 {
-    height: 33vw !important;
   }
   .desc {
     margin-top: 30vw;
@@ -920,7 +903,7 @@ footer {
     flex-wrap: nowrap;
     margin: 0 auto;
     margin-left: 3vw;
- 
+    margin-top: 8vw;
     width: 100%;
   }
   .statistic p {
@@ -930,7 +913,7 @@ footer {
     width: 95vw;
     height: 120vw;
   }
-  footer {
+  .footer {
     display: flex;  
     gap: 5vw;
     flex-direction: column;
@@ -980,12 +963,7 @@ footer {
     height: 3vw;
   }
 
-.itembar {
-  padding: 0 !important
-}
-}
-@media screen and (max-aspect-ratio: 0.5) {
-  .background {
-    height: 85%;
+  .itembar {
+    padding: 0 !important
   }
 }

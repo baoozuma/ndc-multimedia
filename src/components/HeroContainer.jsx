@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import images from './importImages';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import {motion} from "framer-motion";
+import CardIntro from "./introCard";
 class HeroContainer extends Component {
     render() {
     return(
-        <>
+        <div className="hero">
         <div className="background"></div>
         <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <h2 className="title sub" id="typed-text">HI THERE, IT'S <strong>MULTIMEDIA CLUB</strong><br/>Are you a creative spirit looking for a fun way to express yourself? Let's get started!</h2>
@@ -68,8 +69,9 @@ class HeroContainer extends Component {
         spy={true}
         smooth={true}
         duration={2000}><button className="btn see">CÔNG VIỆC</button></Link>
+        </div>
+        <CardIntro/>
     </div>
-    </>
     )
     }
 }

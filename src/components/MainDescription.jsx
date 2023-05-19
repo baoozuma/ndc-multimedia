@@ -13,10 +13,10 @@ import { CardActionArea } from '@mui/material';
 class MainDescription extends Component {
     render() {
     return(
-        <div className='desc'>
-        <h1 className='who'>Xin chào,<strong>&nbsp;Multimedia</strong>&nbsp;đây!</h1>
-        <div className='description' >
+        <>
         
+        <div className='description' >
+          <h1 className='who'>Xin chào,<strong>&nbsp;Multimedia</strong>&nbsp;đây!</h1>
         
         <div className="story">
         <section data-aos="fade-right" data-aos-once="true" data-aos-duration="500"data-aos-easing="ease-in-out">
@@ -98,7 +98,7 @@ class MainDescription extends Component {
           <img className='img' src={images['bg10.jpg']}></img>
         </div> */}
     </div>
-    </div>
+    </>
     )
     }
 }
