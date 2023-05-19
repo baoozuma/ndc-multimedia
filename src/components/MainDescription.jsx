@@ -14,7 +14,7 @@ class MainDescription extends Component {
     render() {
     return(
         <div className='desc'>
-        <h1 className='who'>Xin chào,<strong>&nbsp;Multimedia</strong> đây!</h1>
+        <h1 className='who'>Xin chào,<strong>&nbsp;Multimedia</strong>&nbsp;đây!</h1>
         <div className='description' >
         
         

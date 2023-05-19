@@ -808,9 +808,9 @@ footer {
   .article .cardspan {
     flex-direction: column !important;
     width: 40vw;
-    height: 74vw !important;
+    height: 76vw !important;
     line-height: 3vw;
-    margin: 0;
+    margin-bottom: 0;
   }
   .article img {
     width: 40vw;
@@ -822,6 +822,7 @@ footer {
   }
   .description p {
     font-size: 2vw;
+    margin-bottom: 9vw;
   }
   .who,
   .res {
