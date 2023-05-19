@@ -808,7 +808,7 @@ footer {
   .article .cardspan {
     flex-direction: column !important;
     width: 40vw;
-    height: 72vw !important;
+    height: 74vw !important;
     line-height: 3vw;
     margin: 0;
   }
@@ -917,7 +917,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
-    margin-left: 5vw;
+    margin-left: 3vw;
  
     width: 100%;
   }
