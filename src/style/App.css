@@ -536,11 +536,12 @@ h2.title {
   gap: 2vw;
 }
 .statistic {
-  justify-content: center;
+
   margin: auto 0;
   margin-left: 10vw;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 5vw;
 }
 .statistic p {
@@ -558,6 +559,13 @@ h2.title {
   flex-direction: column; 
   justify-content: center;
   gap: 2vw;
+}
+.MuiImageListItemBar-title {
+  font-size: 1vw;
+}
+.MuiImageListItemBar-subtitle {
+  font-size: 1vw;
+  height: 1vw;
 }
 .gallery h1 {
   margin: 3vw;
@@ -895,9 +903,10 @@ footer {
     font-size: 2vw;
   }
   .statistic { 
+    display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
-    margin-left: 3vw;
+    margin-left: 7vw;
  
     width: 100%;
   }
@@ -948,6 +957,13 @@ footer {
   }
   .description .cardspan {
     height: 70vw;
+  }
+  .MuiImageListItemBar-title {
+    font-size: 2vw !important;
+  }
+  .MuiImageListItemBar-subtitle {
+    font-size: 1vw;
+    height: 3vw;
   }
 
 }

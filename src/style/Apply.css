@@ -180,6 +180,7 @@
         margin: 0vw 4vw;
         color: white;
         font-size: 2vw;
+        line-height: 2.5vw;
       }
       .jobcard a {
         font-weight: bold !important;

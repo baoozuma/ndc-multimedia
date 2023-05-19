@@ -61,7 +61,7 @@ class CardDisplay extends Component {
     return(
       <div className="cardmember">
 
-        <h1>MEET OUR<strong>&nbsp;CORE TEAM</strong></h1>
+        <h1>GẶP GỠ<strong>&nbsp;ĐỘI NGŨ CHÍNH</strong>&nbsp;CỦA MULTIMEDIA</h1>
         <div className="cardlist">
           {memberDB.map((item) => (
               card(item)

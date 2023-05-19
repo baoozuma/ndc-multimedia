@@ -1,22 +1,22 @@
 export const ShortStatistic = [
     {
         id: 1,
-        amount: '3M',
-        title: 'Fanpage Follower',
+        amount: '500',
+        title: 'Fanpage Followers',
     },
     {
         id: 1,
-        amount: '3M',
-        title: 'Fanpage Follower',
+        amount: '100',
+        title: 'Youtube Subcribers',
     },
     {
         id: 1,
-        amount: '3M',
-        title: 'Fanpage Follower',
+        amount: '20',
+        title: 'Total Members',
     },
     {
         id: 1,
-        amount: '3M',
-        title: 'Fanpage Follower',
+        amount: '3',
+        title: 'Short Films',
     },
 ]

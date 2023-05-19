@@ -57,18 +57,18 @@ class HeroContainer extends Component {
         <div className="startbutton" data-aos="fade-up" data-aos-duration="1000">
         <Link
         activeClass="active"
-        to="description"
+        to="article"
         spy={true}
         smooth={true}
         offset={-70}
-        duration={1000}><button className="btn explore">LEARN MORE</button></Link>
+        duration={2000}><button className="btn explore">KHÁM PHÁ</button></Link>
         <Link
         activeClass="active"
-        to="brand"
+        to="contact"
         spy={true}
         smooth={true}
         offset={-70}
-        duration={3000}><button className="btn see">SEE OUR WORK</button></Link>
+        duration={2000}><button className="btn see">CÔNG VIỆC</button></Link>
     </div>
     </>
     )
