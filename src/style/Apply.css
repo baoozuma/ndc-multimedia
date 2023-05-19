@@ -29,13 +29,11 @@
     height: 32vw;
     width: 27vw;
     transition: all 0.3s;
-    border: 0.15vw solid rgb(171, 165, 165);
   }
   .jobcard:hover {
     transform: scale(1.01);
   }
   .jobcard img {
-    border: 0.15vw solid #000000;
     box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
     height: 14vw !important; 
     width: 100% !important;
@@ -163,7 +161,6 @@
         transform: scale(1.05);
       }
       .jobcard img {
-        border: 2px solid #000000;
         box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
         height: 20vw !important; 
         width: 40vw !important;
@@ -183,11 +180,6 @@
         line-height: 2.5vw;
       }
       .jobcard a {
-        font-weight: bold !important;
-        color: rgb(4, 141, 240);
-        font-weight: 500;
-        text-align: center;
-        text-decoration: none;
         font-size: 2vw;
       }
 
@@ -197,7 +189,6 @@
         width: 80vw;
       }
       .jobtitle img {
-        box-shadow: 7px 7px 4px rgba(156, 152, 152, 0.25);
         width: 30vw;
         height: 20vw;
         object-fit: cover;
