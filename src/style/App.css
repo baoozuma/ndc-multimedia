@@ -18,6 +18,7 @@
   inset 0px -11px 8px -2px #010101; 
   position: absolute;
   background-image:  url("../assets/headbg.jpg");
+  z-index: 0;
   
 }
 
@@ -69,6 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 100vw;
 }
 h1 {
+  z-index: 1;
   color: #ffffff;
   font-weight: bolder;
   font-size: 3vw !important;
@@ -247,7 +249,7 @@ h2.title {
   padding: 5vw;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  grid-area: des;
+  
   display: grid;
   gap: 0.5vw;
   grid-template-columns: 1.5fr 1fr 1fr;
@@ -306,11 +308,11 @@ h2.title {
 
 .who {
   color: #ffffff;
-  grid-area: who;
+
   font-weight: bolder;
   font-size: 4vw;
   padding-right: 0vw;
-  margin: 2vw;
+  margin: 10vw 4vw 0vw 4vw;
 }
 .bgp {
   transition: all 0.3s;
@@ -683,7 +685,11 @@ footer {
   height: auto;
   filter: invert(1);
 }
-
+.desc {
+  display: flex;
+  grid-area: des;
+  flex-direction: column;
+}
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 5vw !important;
@@ -774,7 +780,6 @@ footer {
     grid-area: des;
     display: flex;
     flex-direction: column;
-    margin-top: 40vw;
     gap: 4vw;
   }
   .imgblock {
@@ -788,6 +793,9 @@ footer {
   }
   .img7 {
     height: 33vw !important;
+  }
+  .desc {
+    margin-top: 30vw;
   }
   .description .article {
     width: 100%;
@@ -821,6 +829,9 @@ footer {
     justify-content: center;
     margin: 0 auto;
     font-size: 8vw;
+  }
+  .who { 
+    margin: 10vw 4vw 0vw 4vw;
   }
   .description .res {
     font-size: 8vw;
@@ -906,7 +917,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
-    margin-left: 7vw;
+    margin-left: 5vw;
  
     width: 100%;
   }
@@ -966,4 +977,10 @@ footer {
     height: 3vw;
   }
 
+
+}
+@media screen and (max-aspect-ratio: 0.5) {
+  .background {
+    height: 85%;
+  }
 }
