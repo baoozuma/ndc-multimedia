@@ -163,15 +163,15 @@ export const memberDB = [
     },
     {
         id: 16,
-        name: "Alexandra Wang",
-        avatar: images["alexandra.jpg"],
-        address: "123 Main Street, New York, NY",
-        roles: ["Software Developer"],
-        description: "Backend developer with experience in Python, Node.js, and SQL.",
+        name: "Nguyễn Ngọc Hoài",
+        avatar: images["hoai.jpg"],
+        address: "10T - @NguyenDinhChieu",
+        roles: ["Photographer & Content Creator"],
+        description: "Ông thơ tình, Chúa quỷ NĐC.",
         linkedin: "https://www.linkedin.com/in/alexandrawang/",
         twitter: "https://twitter.com/alex_wang",
         github: "https://github.com/alexwang",
-        facebook: "https://www.alexwang.dev/"
+        facebook: "https://www.facebook.com/hoai.nguyenchan.2704"
     },
     {
         id: 17,

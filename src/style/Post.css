@@ -1,0 +1,56 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 100vw;
+    padding: 10vw 5vw 0 5vw;
+}
+.postpage_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+.detail img {
+    width: 18vw;
+    height: 18vw;
+    object-fit: cover;
+}
+.post_container {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin: 5vw 0 0 0vw;
+}
+.detail {
+    background-color: #071D1A;
+    text-decoration: none;
+    margin: 0 auto;
+    border: 0.12vw solid white;
+    width: 60vw;
+    gap: 2vw;
+    display: flex;
+    transition: all 0.3s;
+}
+.detail:hover {
+    border: 0.12vw solid #99A2F3;
+    transform: scale(1.02)
+}
+.detail_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    margin: auto;
+}
+.detail_text .post_title {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.detail_text .topic {
+    font-size: 1vw;
+}
+.detail_text .topic strong {
+    color: #99A2F3;
+    font-weight: 400;
+}

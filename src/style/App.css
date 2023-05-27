@@ -623,9 +623,8 @@ h2.title {
   grid-area: footer;
   display: grid;
   margin-bottom: -6vw;
-  grid-template-areas: 
-  "contact credit"
-  "contact bot";
+  display: flex;
+
 }
 .contact {
   grid-area: contact;
@@ -659,7 +658,7 @@ h2.title {
   margin-left: 1vw;
 }
 .credit {
-  grid-area: credit;
+  margin: 0 auto;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -917,7 +916,7 @@ h2.title {
     display: flex;  
     gap: 5vw;
     flex-direction: column;
-    height: 100vw;
+    height: 80vw;
   }
   .contact {
     gap: 3vw;
@@ -966,4 +965,7 @@ h2.title {
   .itembar {
     padding: 0 !important
   }
+}
+.scroll {
+  background-color: #d6f460;
 }

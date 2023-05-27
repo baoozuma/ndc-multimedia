@@ -27,21 +27,7 @@ class FooterClub extends Component {
                 </div>
                 
                 <div className="credit">
-                {FootLink.map((section, index) => (
-                        <section key={index}>
-                            <h3>{section.title}</h3>
-                            {section.link.map((link, linkIndex) => (
-                                <Link
-                                    key={linkIndex}
-                                    href={section.href[linkIndex]}
-                                    underline="none"
-                                    className="link"
-                                >
-                                    {link}
-                                </Link>
-                            ))}
-                        </section>
-                    ))}
+
                 </div>
                 <div className="bottom_nav">
                     {SocialIcon.map((item) => (

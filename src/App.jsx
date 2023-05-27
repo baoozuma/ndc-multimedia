@@ -11,15 +11,18 @@ import Home from './pages/Home';
 import Apply from './pages/Apply';
 import Review from './pages/Review';
 import Login from './pages/Login';
+import Post from './pages/Post';
 import {Routes, Route} from 'react-router-dom';
 import {Job} from './contentDatabase/Job';
+import {Thumbnail} from './contentDatabase/PostesThumbnail';
 import { motion } from 'framer-motion';
+import ScrollToTop from "react-scroll-to-top";
 const App = () => {
   AOS.init();
   return (
     <body className='body'>
       <Navbar/>
-
+      <ScrollToTop smooth className="scroll" width="20" height="20" />
       <Routes>
         <Route path="/ndc-multimedia/" element={<Home/>} />
         <Route path="/ndc-multimedia/apply" element={<Apply/>} />
@@ -27,6 +30,10 @@ const App = () => {
               <Route path={item.link} element={<Review id={item.id}/>}></Route>
         ))}
         <Route path="/ndc-multimedia/login" element={<Login/>} />
+        <Route path="/ndc-multimedia/post" element={<Post/>} />
+        {Thumbnail.map((item) => (
+              <Route path={item.url} element={<Review id={item.id}/>}></Route>
+        ))}
         
       </Routes>
 

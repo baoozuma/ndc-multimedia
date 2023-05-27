@@ -62,13 +62,13 @@ class HeroContainer extends Component {
         spy={true}
         smooth={true}
         offset={-70}
-        duration={2000}><button className="btn explore">KHÁM PHÁ</button></Link>
+        duration={3000}><button className="btn explore">KHÁM PHÁ</button></Link>
         <Link
         activeClass="active"
-        to="contact"
+        to="footer"
         spy={true}
         smooth={true}
-        duration={2000}><button className="btn see">CÔNG VIỆC</button></Link>
+        duration={3000}><button className="btn see">CÔNG VIỆC</button></Link>
         </div>
         <CardIntro/>
     </div>
