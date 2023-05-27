@@ -31,8 +31,8 @@ const App = () => {
         ))}
         <Route path="/ndc-multimedia/login" element={<Login/>} />
         <Route path="/ndc-multimedia/post" element={<Post/>} />
-        {Thumbnail.map((item) => (
-              <Route path={item.url} element={<Review id={item.id}/>}></Route>
+        {Thumbnail.map((tem) => (
+              <Route path={tem.link} element={<Review id={tem.id}/>}></Route>
         ))}
         
       </Routes>
