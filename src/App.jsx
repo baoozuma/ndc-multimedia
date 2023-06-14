@@ -17,6 +17,7 @@ import {Job} from './contentDatabase/Job';
 import {Thumbnail} from './contentDatabase/PostesThumbnail';
 import { motion } from 'framer-motion';
 import ScrollToTop from "react-scroll-to-top";
+
 const App = () => {
   AOS.init();
   return (

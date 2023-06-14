@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
     "aos": "^2.3.4",
+    "firebase": "^9.22.2",
     "framer-motion": "^10.12.4",
     "node-sass": "^8.0.0",
     "particles.js": "^2.0.0",
