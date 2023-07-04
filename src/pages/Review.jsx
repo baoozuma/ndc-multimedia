@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../style/App.css';
-
+import {Routes, Route, Link} from 'react-router-dom';
 import {Job} from '../contentDatabase/Job';
 import Slider from "react-slick";
 import Button from '@mui/material/Button';
@@ -45,7 +45,7 @@ const Review = (props) => {
                     <img src={item} className='reviewpicture'></img>
                 ))}
             </Slider>
-            <Button variant="contained" className="applybutton">ỨNG TUYỂN NGAY</Button>
+            <Button variant="contained" className="applybutton"><Link to="/ndc-multimedia/form">ỨNG TUYỂN NGAY</Link></Button>
         </div>
     )
 }

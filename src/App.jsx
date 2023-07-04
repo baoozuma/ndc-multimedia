@@ -12,6 +12,7 @@ import Apply from './pages/Apply';
 import Review from './pages/Review';
 import Login from './pages/Login';
 import Post from './pages/Post';
+import Form from './pages/Form';
 import {Routes, Route} from 'react-router-dom';
 import {Job} from './contentDatabase/Job';
 import {Thumbnail} from './contentDatabase/PostesThumbnail';
@@ -35,7 +36,7 @@ const App = () => {
         {Thumbnail.map((tem) => (
               <Route path={tem.link} element={<Review id={tem.id}/>}></Route>
         ))}
-        
+        <Route path="/ndc-multimedia/form" element={<Form/>} />
       </Routes>
 
     </body>

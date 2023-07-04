@@ -1,0 +1,121 @@
+.outground {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vw;
+    align-items: center;
+}
+.inground {
+    width: 80vw;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 10vw;
+    justify-content: center;
+    gap: 3vw;
+}
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+
+}
+form h1 {
+    margin: 0 auto !important;
+    margin-bottom: 3vw !important;
+    font-size: 2vw !important;
+}
+form label {
+    
+    display: flex;
+}
+form label p {
+    font-size: 1.2vw;
+    margin: 0.4vw;
+}
+form input {
+    min-width: 20vw;
+    margin-left: 2vw;
+    border: none;
+    height: 2vw;
+    font-size: 1.2vw;
+    padding: 0.5vw;
+    border-bottom: 0.1vw solid rgb(106, 106, 159);
+    transition: all 0.3s;
+}
+form input:hover {
+    border-bottom: 0.1vw solid rgb(157, 157, 211);
+}    
+input:focus {
+    outline: none !important;
+}
+.radio-group {
+    gap: 1vw;
+    
+    margin-left: 1vw;
+}
+.radio-container {
+    display: flex;
+}
+.radio-group p {
+    margin-right: 1vw;
+}
+.checkbox {
+    gap: 2vw;
+    display: flex;
+}
+textarea {
+    font-size: 1.5vw;
+    width: 32vw;
+    height: 10vw;
+    padding: 1vw;
+}
+.submit-button {
+    margin: 0 auto !important;
+    width: 7vw;
+    height: 3vw;
+    font-family: 'Montserrat' !important;
+    font-size: 1.1vw !important;
+}
+@media screen and (max-width: 960px) {
+    .outground {
+        padding-top: 20vw;
+    }
+    .inground {
+        margin: auto;
+    }
+    form input {
+        font-size: 3vw;
+        height: 3.2vw;
+    }
+    form label p {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .radio-group {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .checkbox {
+        flex-direction: column;
+    }
+    .submit-button {
+        font-size: 2.7vw !important;
+        width: 15vw;
+        height: 6vw;
+    }
+    form {
+        gap: 5vw;
+    }
+    .radio-container {
+        flex-direction: column;
+    }
+    textarea {
+        width: 50vw;
+        height: 30vw;
+        padding: 2vw;
+    }
+}

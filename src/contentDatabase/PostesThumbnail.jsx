@@ -18,4 +18,13 @@ export const Thumbnail = [
         post: "path/to/mdfile",
         url: "https://www.youtube.com/watch?v=7xu9ES6Vmz8&t=191s",
     },
+    {
+        id: 3,
+        title: "SHORT FILM - PROJECT 002 - MULTIMEDIA CLUB",
+        topic: "Youth, Love, Countryside",
+        subtitle: " Những năm gần đây… Mùa hè vội quá. Tia nắng đầu tiên lọt qua khe lá, chạm vào cái đầu mũi nhỏ nhắn của em.",
+        image: images["project2.png"],
+        post: "",
+        url: "https://fb.watch/lz-FW_oaBt/",
+    }
 ]
