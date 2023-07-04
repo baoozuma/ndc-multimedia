@@ -25,7 +25,7 @@ const App = () => {
       <Navbar/>
       <ScrollToTop smooth className="scroll" width="20" height="20" />
       <Routes>
-        <Route path="/ndc-multimedia/" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/ndc-multimedia/apply" element={<Apply/>} />
         {Job.map((item) => (
               <Route path={item.link} element={<Review id={item.id}/>}></Route>

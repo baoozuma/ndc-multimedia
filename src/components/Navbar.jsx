@@ -6,10 +6,10 @@ class Navbar extends Component {
     render() {
         return (
             <div className='dynamic_nav'>
-            <Link to= "/ndc-multimedia/"><img className="logo" src={images['logo1.png']} /></Link>
+            <Link to= "/"><img className="logo" src={images['logo1.png']} /></Link>
             
             <nav className="navbar">
-              <Link to="/ndc-multimedia/" className="nav-item">TRANG CHỦ</Link>
+              <Link to="/" className="nav-item">TRANG CHỦ</Link>
               <Link to= "/ndc-multimedia/apply" className="nav-item">TUYỂN DỤNG</Link>
               <Link to="/ndc-multimedia/post" className="nav-item">BÀI VIẾT</Link>
               <Link to="/ndc-multimedia/login"className="nav-item">ĐĂNG NHẬP</Link>

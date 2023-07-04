@@ -4,7 +4,9 @@ import images from "./importImages";
 import Slider from "react-slick";
 import { FeedClub } from "../contentDatabase/FeedbackAboutClub";
 import { ShortStatistic } from "../contentDatabase/ShortStatistic";
+import "slick-carousel/slick/slick.css";
 
+import "slick-carousel/slick/slick-theme.css";
 const settings = {
 
     infinite: true,
